@@ -3,19 +3,6 @@ from pathlib import Path
 
 import mteb
 
-taskname = "LccSentimentClassification"  # just a small test task
-prompt = "thatasdfgggsdsd"
-modelname = "intfloat/multilingual-e5-large-instruct"
-
-
-meta = mteb.get_model_meta(modelname, experiment_kwargs=exp)
-mdl = meta.load_model()
-taskname in mdl.model.prompts  # False
-mdl = mteb.get_model(modelname, prompts={taskname: prompt})
-taskname in mdl.model.prompts  # true
-
-
-raise ValueError("stop")
 # setup logging
 logging.basicConfig(
     format="%(asctime)s - %(levelname)s - %(message)s",
@@ -47,7 +34,9 @@ experiments = [
 
 
 for exp in experiments:
-    meta = mteb.get_model_meta(modelname, experiment_kwargs=exp)
+    meta = mteb.get_model_meta(
+        modelname, experiment_kwargs=exp
+    )  # doesn't work currently but is fixed in https://github.com/embeddings-benchmark/mteb/pull/4308
     results = mteb.evaluate(meta, task, cache=cache, raise_error=False)
 
 
