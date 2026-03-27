@@ -62,7 +62,7 @@ https://github.com/KennethEnevoldsen/prompt-hacking/issues/2
 "clustering": [  
   "MedrxivClusteringP2P.v2", # in mteb eng
   "StackExchangeClustering.v2", # in mteb eng
-  "WikiClusteringP2P.v2", # in mmteb
+  "MasakhaNEWSClusteringS2S", # in mmteb
 ]
 }
 ```
@@ -76,9 +76,6 @@ Qwen/Qwen3-Embedding-0.6B # vary across size, current sota
 Qwen/Qwen3-Embedding-4B
 hkunlp/instructor-large # the original instruct model, only English
 nvidia/NV-Embed-v2 # only English
-
-# potentially:
-google/embeddinggemma-300m # uses prompt templates
 ```
 
 Papers are 
