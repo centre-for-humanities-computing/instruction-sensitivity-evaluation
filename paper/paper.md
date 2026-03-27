@@ -50,7 +50,7 @@ https://github.com/KennethEnevoldsen/prompt-hacking/issues/2
    "FEVERHardNegatives" # in mteb(eng, v2)
 ], 
 "classification": [
-  "AfriSentiClassification", # multilingual in MMTEB 
+  "TweetSentimentClassification", # in MTEB europe
   "ImdbClassification", # mteb eng
   "AmazonCounterfactualClassification" # mteb eng
 ], 
