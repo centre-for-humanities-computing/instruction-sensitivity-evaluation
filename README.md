@@ -3,8 +3,7 @@
 
 ## Setting up the environment
 ```
-uv sync
+make install
 ```
 
-
-
+otherwise see the makefile for now
