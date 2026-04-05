@@ -29,7 +29,7 @@ if task.metadata.type == "Retrieval":
 
 experiments = [
     None,
-    {"prompts": {taskname: prompt}},
+    {"prompts": {formatted_task_name: prompt}},
 ]  # construct the full set of experiments to run
 
 
