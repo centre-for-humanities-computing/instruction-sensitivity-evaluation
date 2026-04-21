@@ -13,9 +13,17 @@ cache_path = Path( "cache__data") / "mteb_cache"
 cache = mteb.ResultCache(cache_path=cache_path)
 
 
-def run_task(taskname, modelname, prompt, include_baseline_prompt=True, bs=32):
+def run_task(taskname, modelname, prompt, tasktype, include_baseline_prompt=True, bs=32):
     
+
     task = mteb.get_task(taskname, languages=['eng'], exclusive_language_filter=True)
+    
+    """
+    if tasktype == "retrieval":
+        task = mteb.get_task(taskname, languages=['eng'])
+    else:
+        task = mteb.get_task(taskname, languages=['eng'], exclusive_language_filter=True)
+    """
 
     formatted_task_name = task.metadata.name
     if task.metadata.type == "Retrieval":
@@ -27,10 +35,12 @@ def run_task(taskname, modelname, prompt, include_baseline_prompt=True, bs=32):
     ]
 
     if include_baseline_prompt:
-        experiments.insert(0, None)
+        experiments.insert(0,None)
 
 
     for exp in experiments:
+        # reload task to aboid dataset being None
+        task = mteb.get_task(taskname, languages=['eng'], exclusive_language_filter=True)
         meta = mteb.get_model_meta(
             modelname, experiment_kwargs=exp
         )  # doesn't work currently but is fixed in https://github.com/embeddings-benchmark/mteb/pull/4308
@@ -50,7 +60,8 @@ if __name__ == '__main__':
 
     args = arg_parser.parse_args()
     
-    EXCLUDE_DATASETS = ['STS22.v2'] # Excluded because memory issue; TODO: investigate with a smaller batch size
+    EXCLUDE_DATASETS = ['STS22.v2', 'Touche2020Retrieval.v3']
+    EXCLUDE_DATASETS = []
 
     with open(args.prompts_path, 'r') as f:
         prompts = json.load(f)
@@ -68,7 +79,41 @@ if __name__ == '__main__':
                     modelname=args.modelname,
                     prompt=prompt_dict['generated_prompt'],
                     include_baseline_prompt=True,
-                    bs=args.enc_batch_size
+                    bs=args.enc_batch_size,
+                    tasktype=prompt_dict['task_description']
                 )
         else:
             logger.info(f"[SKIPPED AS EXCLUDED] Task: {prompt_dict['task']}; Lang: {prompt_dict['language']}; Dataset Descr: {prompt_dict['dataset_description']}")
+
+    
+    """
+    MODELS = [
+       # "intfloat/multilingual-e5-large-instruct", # highly popular
+      #  "Qwen/Qwen3-Embedding-0.6B", # vary across size, current sota
+   #  "Qwen/Qwen3-Embedding-4B",
+   # "BAAI/bge-base-en-v1.5",
+   # "BAAI/bge-large-en-v1.5",
+   "HIT-TMG/KaLM-embedding-multilingual-mini-instruct-v2",
+   #  "hkunlp/instructor-large", # the original instruct model, only English
+#        "nvidia/NV-Embed-v2" # only English
+    ]
+
+    prompts_path = "openai-gpt-oss-120b-gen-prompts_p.json"
+    with open(prompts_path, 'r') as f:
+        prompts = json.load(f)
+
+    for modelname in MODELS:
+        logger.info(f"-------> Running {modelname}...")
+        for i, prompt_dict in enumerate(prompts):
+            logger.info(f"-------> Running {modelname} | Prompt {i+1} / {len(prompts)}...")
+
+            run_task(
+                taskname=prompt_dict['task'],
+                modelname=modelname,
+                prompt=prompt_dict['generated_prompt'],
+                include_baseline_prompt=True
+            )
+
+
+    """
+
