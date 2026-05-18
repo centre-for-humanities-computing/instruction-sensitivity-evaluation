@@ -1,0 +1,466 @@
+\appendix
+\section{Best and Worst Performing Prompts}
+
+\begin{table*}[t]
+\centering
+\small
+\caption{Best and worst prompts for task: AmazonCounterfactualClassification}
+\begin{tabular}{|p{0.24\textwidth}|c|c|p{0.58\textwidth}|}
+\hline
+Model & Type & Score & Prompt \\
+\hline
+\multirow{2}{=}{\raggedright\texttt{BAAI/\allowbreak bge-\allowbreak base-\allowbreak en-\allowbreak v1.5}} & Best & 0.734 & \texttt{Label this example:} \\
+\cline{2-4}
+& Worst & 0.66 & \texttt{default} \\
+\hline
+\multirow{2}{=}{\raggedright\texttt{BAAI/\allowbreak bge-\allowbreak large-\allowbreak en-\allowbreak v1.5}} & Best & 0.719 & \texttt{Label this example:} \\
+\cline{2-4}
+& Worst & 0.637 & \texttt{Text classification (eng) – Amazon reviews:} \\
+\hline
+\multirow{2}{=}{\raggedright\texttt{BAAI/\allowbreak bge-\allowbreak small-\allowbreak en-\allowbreak v1.5}} & Best & 0.705 & \texttt{Label this example:} \\
+\cline{2-4}
+& Worst & 0.62 & \texttt{Assign a category to this input:} \\
+\hline
+\multirow{2}{=}{\raggedright\texttt{KaLM-\allowbreak Embedding/\allowbreak KaLM-\allowbreak embed...}} & Best & 0.955 & \texttt{default} \\
+\cline{2-4}
+& Worst & 0.844 & \texttt{Assign a category to this input:} \\
+\hline
+\multirow{2}{=}{\raggedright\texttt{Qwen/\allowbreak Qwen3-\allowbreak Embedding-\allowbreak 0.6B}} & Best & 0.928 & \texttt{Assign a counterfactual detection label:} \\
+\cline{2-4}
+& Worst & 0.674 & \texttt{Text classification (eng) – Amazon reviews:} \\
+\hline
+\multirow{2}{=}{\raggedright\texttt{Qwen/\allowbreak Qwen3-\allowbreak Embedding-\allowbreak 4B}} & Best & 0.954 & \texttt{Assign a counterfactual detection label:} \\
+\cline{2-4}
+& Worst & 0.615 & \texttt{Assign a category to the given review pair, language eng:} \\
+\hline
+\multirow{2}{=}{\raggedright\texttt{intfloat/\allowbreak multilingual-\allowbreak e5-\allowbreak ...}} & Best & 0.75 & \texttt{Assign a counterfactual detection label:} \\
+\cline{2-4}
+& Worst & 0.589 & \texttt{Predict the class:} \\
+\hline
+\end{tabular}
+\end{table*}
+
+\begin{table*}[t]
+\centering
+\small
+\caption{Best and worst prompts for task: FEVERHardNegatives}
+\begin{tabular}{|p{0.24\textwidth}|c|c|p{0.58\textwidth}|}
+\hline
+Model & Type & Score & Prompt \\
+\hline
+\multirow{2}{=}{\raggedright\texttt{BAAI/\allowbreak bge-\allowbreak base-\allowbreak en-\allowbreak v1.5}} & Best & 0.86 & \texttt{default} \\
+\cline{2-4}
+& Worst & 0.668 & \texttt{Text to be used in retrieval:} \\
+\hline
+\multirow{2}{=}{\raggedright\texttt{BAAI/\allowbreak bge-\allowbreak large-\allowbreak en-\allowbreak v1.5}} & Best & 0.873 & \texttt{default} \\
+\cline{2-4}
+& Worst & 0.472 & \texttt{Search representation for retrieval:} \\
+\hline
+\multirow{2}{=}{\raggedright\texttt{BAAI/\allowbreak bge-\allowbreak small-\allowbreak en-\allowbreak v1.5}} & Best & 0.862 & \texttt{default} \\
+\cline{2-4}
+& Worst & 0.627 & \texttt{Search representation for retrieval:} \\
+\hline
+\multirow{2}{=}{\raggedright\texttt{KaLM-\allowbreak Embedding/\allowbreak KaLM-\allowbreak embed...}} & Best & 0.882 & \texttt{default} \\
+\cline{2-4}
+& Worst & 0.807 & \texttt{Encode this FEVER claim in eng for retrieval:} \\
+\hline
+\multirow{2}{=}{\raggedright\texttt{Qwen/\allowbreak Qwen3-\allowbreak Embedding-\allowbreak 0.6B}} & Best & 0.889 & \texttt{default} \\
+\cline{2-4}
+& Worst & 0.853 & \texttt{Encode this claim for retrieval:} \\
+\hline
+\multirow{2}{=}{\raggedright\texttt{intfloat/\allowbreak multilingual-\allowbreak e5-\allowbreak ...}} & Best & 0.805 & \texttt{Retrieve relevant documents for the given claim:} \\
+\cline{2-4}
+& Worst & 0.366 & \texttt{Encode this input for retrieval:} \\
+\hline
+\end{tabular}
+\end{table*}
+
+\begin{table*}[t]
+\centering
+\small
+\caption{Best and worst prompts for task: ImdbClassification}
+\begin{tabular}{|p{0.24\textwidth}|c|c|p{0.58\textwidth}|}
+\hline
+Model & Type & Score & Prompt \\
+\hline
+\multirow{2}{=}{\raggedright\texttt{BAAI/\allowbreak bge-\allowbreak base-\allowbreak en-\allowbreak v1.5}} & Best & 0.914 & \texttt{Assign a label to this review:} \\
+\cline{2-4}
+& Worst & 0.878 & \texttt{Encode and classify the following eng snippet from Large Movie Review Dataset:} \\
+\hline
+\multirow{2}{=}{\raggedright\texttt{BAAI/\allowbreak bge-\allowbreak large-\allowbreak en-\allowbreak v1.5}} & Best & 0.935 & \texttt{Assign a label to this review:} \\
+\cline{2-4}
+& Worst & 0.874 & \texttt{Category prediction for the following eng review (Large Movie Review Dataset):} \\
+\hline
+\multirow{2}{=}{\raggedright\texttt{BAAI/\allowbreak bge-\allowbreak small-\allowbreak en-\allowbreak v1.5}} & Best & 0.917 & \texttt{Assign a label to this review:} \\
+\cline{2-4}
+& Worst & 0.89 & \texttt{Determine the class for the given passage:} \\
+\hline
+\multirow{2}{=}{\raggedright\texttt{KaLM-\allowbreak Embedding/\allowbreak KaLM-\allowbreak embed...}} & Best & 0.959 & \texttt{default} \\
+\cline{2-4}
+& Worst & 0.945 & \texttt{Determine the class for the given passage:} \\
+\hline
+\multirow{2}{=}{\raggedright\texttt{Qwen/\allowbreak Qwen3-\allowbreak Embedding-\allowbreak 0.6B}} & Best & 0.954 & \texttt{default} \\
+\cline{2-4}
+& Worst & 0.894 & \texttt{Determine the class for the given passage:} \\
+\hline
+\multirow{2}{=}{\raggedright\texttt{Qwen/\allowbreak Qwen3-\allowbreak Embedding-\allowbreak 4B}} & Best & 0.97 & \texttt{Classify the movie review:} \\
+\cline{2-4}
+& Worst & 0.904 & \texttt{Assign a category to this input:} \\
+\hline
+\multirow{2}{=}{\raggedright\texttt{intfloat/\allowbreak multilingual-\allowbreak e5-\allowbreak ...}} & Best & 0.95 & \texttt{Classify the movie review:} \\
+\cline{2-4}
+& Worst & 0.75 & \texttt{Determine the class for the given passage:} \\
+\hline
+\end{tabular}
+\end{table*}
+
+\begin{table*}[t]
+\centering
+\small
+\caption{Best and worst prompts for task: MIRACLRetrievalHardNegatives.v2}
+\begin{tabular}{|p{0.24\textwidth}|c|c|p{0.58\textwidth}|}
+\hline
+Model & Type & Score & Prompt \\
+\hline
+\multirow{2}{=}{\raggedright\texttt{BAAI/\allowbreak bge-\allowbreak base-\allowbreak en-\allowbreak v1.5}} & Best & 0.464 & \texttt{Search for documents using this query:} \\
+\cline{2-4}
+& Worst & 0.118 & \texttt{default} \\
+\hline
+\multirow{2}{=}{\raggedright\texttt{BAAI/\allowbreak bge-\allowbreak large-\allowbreak en-\allowbreak v1.5}} & Best & 0.472 & \texttt{Retrieve relevant passage:} \\
+\cline{2-4}
+& Worst & 0.173 & \texttt{default} \\
+\hline
+\multirow{2}{=}{\raggedright\texttt{BAAI/\allowbreak bge-\allowbreak small-\allowbreak en-\allowbreak v1.5}} & Best & 0.421 & \texttt{Search passage for MIRACL in eng:} \\
+\cline{2-4}
+& Worst & 0.055 & \texttt{default} \\
+\hline
+\multirow{2}{=}{\raggedright\texttt{KaLM-\allowbreak Embedding/\allowbreak KaLM-\allowbreak embed...}} & Best & 0.556 & \texttt{Search for documents using this query:} \\
+\cline{2-4}
+& Worst & 0.492 & \texttt{Retrieve relevant text in eng:} \\
+\hline
+\multirow{2}{=}{\raggedright\texttt{Qwen/\allowbreak Qwen3-\allowbreak Embedding-\allowbreak 0.6B}} & Best & 0.686 & \texttt{default} \\
+\cline{2-4}
+& Worst & 0.491 & \texttt{Encode for retrieval in eng:} \\
+\hline
+\multirow{2}{=}{\raggedright\texttt{Qwen/\allowbreak Qwen3-\allowbreak Embedding-\allowbreak 4B}} & Best & 0.594 & \texttt{Retrieve relevant passage:} \\
+\cline{2-4}
+& Worst & 0.575 & \texttt{Encode this input for retrieval:} \\
+\hline
+\multirow{2}{=}{\raggedright\texttt{intfloat/\allowbreak multilingual-\allowbreak e5-\allowbreak ...}} & Best & 0.621 & \texttt{default} \\
+\cline{2-4}
+& Worst & 0.163 & \texttt{Encode for retrieval in eng:} \\
+\hline
+\end{tabular}
+\end{table*}
+
+\begin{table*}[t]
+\centering
+\small
+\caption{Best and worst prompts for task: MasakhaNEWSClusteringS2S}
+\begin{tabular}{|p{0.24\textwidth}|c|c|p{0.58\textwidth}|}
+\hline
+Model & Type & Score & Prompt \\
+\hline
+\multirow{2}{=}{\raggedright\texttt{BAAI/\allowbreak bge-\allowbreak base-\allowbreak en-\allowbreak v1.5}} & Best & 0.576 & \texttt{Clustering input:} \\
+\cline{2-4}
+& Worst & 0.219 & \texttt{Cluster representation:} \\
+\hline
+\multirow{2}{=}{\raggedright\texttt{BAAI/\allowbreak bge-\allowbreak large-\allowbreak en-\allowbreak v1.5}} & Best & 0.528 & \texttt{Group similar MasakhaNEWS headlines:} \\
+\cline{2-4}
+& Worst & 0.091 & \texttt{Cluster representation for news headlines:} \\
+\hline
+\multirow{2}{=}{\raggedright\texttt{BAAI/\allowbreak bge-\allowbreak small-\allowbreak en-\allowbreak v1.5}} & Best & 0.474 & \texttt{Assign to a cluster:} \\
+\cline{2-4}
+& Worst & 0.159 & \texttt{Cluster this text:} \\
+\hline
+\multirow{2}{=}{\raggedright\texttt{KaLM-\allowbreak Embedding/\allowbreak KaLM-\allowbreak embed...}} & Best & 0.642 & \texttt{Cluster representation for MasakhaNEWS headlines, language eng:} \\
+\cline{2-4}
+& Worst & 0.5 & \texttt{Group similar texts:} \\
+\hline
+\multirow{2}{=}{\raggedright\texttt{Qwen/\allowbreak Qwen3-\allowbreak Embedding-\allowbreak 0.6B}} & Best & 0.656 & \texttt{Assign each news article title to a cluster:} \\
+\cline{2-4}
+& Worst & 0.434 & \texttt{Clustering input:} \\
+\hline
+\multirow{2}{=}{\raggedright\texttt{Qwen/\allowbreak Qwen3-\allowbreak Embedding-\allowbreak 4B}} & Best & 0.759 & \texttt{Group similar news headlines (MasakhaNEWS) in eng:} \\
+\cline{2-4}
+& Worst & 0.576 & \texttt{Group similar texts:} \\
+\hline
+\multirow{2}{=}{\raggedright\texttt{intfloat/\allowbreak multilingual-\allowbreak e5-\allowbreak ...}} & Best & 0.658 & \texttt{Assign each MasakhaNEWS article title to a cluster, eng:} \\
+\cline{2-4}
+& Worst & 0.451 & \texttt{Cluster MasakhaNEWS headlines in eng:} \\
+\hline
+\end{tabular}
+\end{table*}
+
+\begin{table*}[t]
+\centering
+\small
+\caption{Best and worst prompts for task: MedrxivClusteringP2P.v2}
+\begin{tabular}{|p{0.24\textwidth}|c|c|p{0.58\textwidth}|}
+\hline
+Model & Type & Score & Prompt \\
+\hline
+\multirow{2}{=}{\raggedright\texttt{BAAI/\allowbreak bge-\allowbreak base-\allowbreak en-\allowbreak v1.5}} & Best & 0.371 & \texttt{Cluster representation:} \\
+\cline{2-4}
+& Worst & 0.363 & \texttt{default} \\
+\hline
+\multirow{2}{=}{\raggedright\texttt{BAAI/\allowbreak bge-\allowbreak large-\allowbreak en-\allowbreak v1.5}} & Best & 0.367 & \texttt{Clustering input:} \\
+\cline{2-4}
+& Worst & 0.358 & \texttt{Cluster these medrxiv titles+abstracts (eng):} \\
+\hline
+\multirow{2}{=}{\raggedright\texttt{BAAI/\allowbreak bge-\allowbreak small-\allowbreak en-\allowbreak v1.5}} & Best & 0.367 & \texttt{default} \\
+\cline{2-4}
+& Worst & 0.359 & \texttt{Group similar medrxiv texts into one of 51 categories:} \\
+\hline
+\multirow{2}{=}{\raggedright\texttt{KaLM-\allowbreak Embedding/\allowbreak KaLM-\allowbreak embed...}} & Best & 0.456 & \texttt{default} \\
+\cline{2-4}
+& Worst & 0.354 & \texttt{Group similar texts:} \\
+\hline
+\multirow{2}{=}{\raggedright\texttt{Qwen/\allowbreak Qwen3-\allowbreak Embedding-\allowbreak 0.6B}} & Best & 0.422 & \texttt{default} \\
+\cline{2-4}
+& Worst & 0.37 & \texttt{Assign to a cluster (eng):} \\
+\hline
+\multirow{2}{=}{\raggedright\texttt{Qwen/\allowbreak Qwen3-\allowbreak Embedding-\allowbreak 4B}} & Best & 0.438 & \texttt{Assign to a cluster (eng):} \\
+\cline{2-4}
+& Worst & 0.397 & \texttt{Group similar texts:} \\
+\hline
+\multirow{2}{=}{\raggedright\texttt{intfloat/\allowbreak multilingual-\allowbreak e5-\allowbreak ...}} & Best & 0.396 & \texttt{Cluster the medrxiv title and abstract:} \\
+\cline{2-4}
+& Worst & 0.36 & \texttt{Group similar texts (eng):} \\
+\hline
+\end{tabular}
+\end{table*}
+
+\begin{table*}[t]
+\centering
+\small
+\caption{Best and worst prompts for task: STS14}
+\begin{tabular}{|p{0.24\textwidth}|c|c|p{0.58\textwidth}|}
+\hline
+Model & Type & Score & Prompt \\
+\hline
+\multirow{2}{=}{\raggedright\texttt{BAAI/\allowbreak bge-\allowbreak base-\allowbreak en-\allowbreak v1.5}} & Best & 0.823 & \texttt{default} \\
+\cline{2-4}
+& Worst & 0.626 & \texttt{Encode for semantic matching:} \\
+\hline
+\multirow{2}{=}{\raggedright\texttt{BAAI/\allowbreak bge-\allowbreak large-\allowbreak en-\allowbreak v1.5}} & Best & 0.828 & \texttt{default} \\
+\cline{2-4}
+& Worst & 0.582 & \texttt{Text pair similarity assessment:} \\
+\hline
+\multirow{2}{=}{\raggedright\texttt{BAAI/\allowbreak bge-\allowbreak small-\allowbreak en-\allowbreak v1.5}} & Best & 0.818 & \texttt{default} \\
+\cline{2-4}
+& Worst & 0.562 & \texttt{Text pair similarity assessment:} \\
+\hline
+\multirow{2}{=}{\raggedright\texttt{KaLM-\allowbreak Embedding/\allowbreak KaLM-\allowbreak embed...}} & Best & 0.86 & \texttt{default} \\
+\cline{2-4}
+& Worst & 0.731 & \texttt{Assess semantic similarity, language eng, dataset SemEval STS 2014:} \\
+\hline
+\multirow{2}{=}{\raggedright\texttt{Qwen/\allowbreak Qwen3-\allowbreak Embedding-\allowbreak 0.6B}} & Best & 0.871 & \texttt{default} \\
+\cline{2-4}
+& Worst & 0.723 & \texttt{Text pair similarity assessment:} \\
+\hline
+\multirow{2}{=}{\raggedright\texttt{Qwen/\allowbreak Qwen3-\allowbreak Embedding-\allowbreak 4B}} & Best & 0.879 & \texttt{Semantic similarity query:} \\
+\cline{2-4}
+& Worst & 0.809 & \texttt{Assess semantic similarity, language eng, dataset SemEval STS 2014:} \\
+\hline
+\multirow{2}{=}{\raggedright\texttt{intfloat/\allowbreak multilingual-\allowbreak e5-\allowbreak ...}} & Best & 0.848 & \texttt{default} \\
+\cline{2-4}
+& Worst & 0.787 & \texttt{Encode this pair for similarity measurement:} \\
+\hline
+\end{tabular}
+\end{table*}
+
+\begin{table*}[t]
+\centering
+\small
+\caption{Best and worst prompts for task: STS15}
+\begin{tabular}{|p{0.24\textwidth}|c|c|p{0.58\textwidth}|}
+\hline
+Model & Type & Score & Prompt \\
+\hline
+\multirow{2}{=}{\raggedright\texttt{BAAI/\allowbreak bge-\allowbreak base-\allowbreak en-\allowbreak v1.5}} & Best & 0.88 & \texttt{default} \\
+\cline{2-4}
+& Worst & 0.717 & \texttt{Encode pair for semantic-similarity in eng:} \\
+\hline
+\multirow{2}{=}{\raggedright\texttt{BAAI/\allowbreak bge-\allowbreak large-\allowbreak en-\allowbreak v1.5}} & Best & 0.88 & \texttt{default} \\
+\cline{2-4}
+& Worst & 0.733 & \texttt{Encode for semantic matching:} \\
+\hline
+\multirow{2}{=}{\raggedright\texttt{BAAI/\allowbreak bge-\allowbreak small-\allowbreak en-\allowbreak v1.5}} & Best & 0.873 & \texttt{default} \\
+\cline{2-4}
+& Worst & 0.674 & \texttt{Measure text similarity in eng, SemEval STS 2015:} \\
+\hline
+\multirow{2}{=}{\raggedright\texttt{KaLM-\allowbreak Embedding/\allowbreak KaLM-\allowbreak embed...}} & Best & 0.903 & \texttt{default} \\
+\cline{2-4}
+& Worst & 0.843 & \texttt{Measure text similarity in eng, SemEval STS 2015:} \\
+\hline
+\multirow{2}{=}{\raggedright\texttt{Qwen/\allowbreak Qwen3-\allowbreak Embedding-\allowbreak 0.6B}} & Best & 0.914 & \texttt{default} \\
+\cline{2-4}
+& Worst & 0.857 & \texttt{Measure text similarity in eng, SemEval STS 2015:} \\
+\hline
+\multirow{2}{=}{\raggedright\texttt{Qwen/\allowbreak Qwen3-\allowbreak Embedding-\allowbreak 4B}} & Best & 0.928 & \texttt{Encode for semantic similarity:} \\
+\cline{2-4}
+& Worst & 0.899 & \texttt{SemEval STS 2015 - Semantic similarity:} \\
+\hline
+\multirow{2}{=}{\raggedright\texttt{intfloat/\allowbreak multilingual-\allowbreak e5-\allowbreak ...}} & Best & 0.91 & \texttt{default} \\
+\cline{2-4}
+& Worst & 0.858 & \texttt{Text pair similarity assessment:} \\
+\hline
+\end{tabular}
+\end{table*}
+
+\begin{table*}[t]
+\centering
+\small
+\caption{Best and worst prompts for task: STS22.v2}
+\begin{tabular}{|p{0.24\textwidth}|c|c|p{0.58\textwidth}|}
+\hline
+Model & Type & Score & Prompt \\
+\hline
+\multirow{2}{=}{\raggedright\texttt{BAAI/\allowbreak bge-\allowbreak base-\allowbreak en-\allowbreak v1.5}} & Best & 0.678 & \texttt{In eng, assess similarity of news article pair – SemEval 2022 Task 8:} \\
+\cline{2-4}
+& Worst & 0.466 & \texttt{default} \\
+\hline
+\multirow{2}{=}{\raggedright\texttt{BAAI/\allowbreak bge-\allowbreak large-\allowbreak en-\allowbreak v1.5}} & Best & 0.694 & \texttt{Semantic similarity (eng) – SemEval 2022 Task 8 News:} \\
+\cline{2-4}
+& Worst & 0.489 & \texttt{default} \\
+\hline
+\multirow{2}{=}{\raggedright\texttt{BAAI/\allowbreak bge-\allowbreak small-\allowbreak en-\allowbreak v1.5}} & Best & 0.669 & \texttt{Evaluate semantic similarity (eng) on filtered SemEval 2022 Task 8 data:} \\
+\cline{2-4}
+& Worst & 0.469 & \texttt{default} \\
+\hline
+\multirow{2}{=}{\raggedright\texttt{KaLM-\allowbreak Embedding/\allowbreak KaLM-\allowbreak embed...}} & Best & 0.732 & \texttt{default} \\
+\cline{2-4}
+& Worst & 0.688 & \texttt{Encode for semantic matching:} \\
+\hline
+\multirow{2}{=}{\raggedright\texttt{Qwen/\allowbreak Qwen3-\allowbreak Embedding-\allowbreak 0.6B}} & Best & 0.718 & \texttt{default} \\
+\cline{2-4}
+& Worst & 0.682 & \texttt{Measure semantic similarity:} \\
+\hline
+\multirow{2}{=}{\raggedright\texttt{Qwen/\allowbreak Qwen3-\allowbreak Embedding-\allowbreak 4B}} & Best & 0.727 & \texttt{Encode for semantic matching:} \\
+\cline{2-4}
+& Worst & 0.67 & \texttt{Text pair similarity assessment:} \\
+\hline
+\multirow{2}{=}{\raggedright\texttt{intfloat/\allowbreak multilingual-\allowbreak e5-\allowbreak ...}} & Best & 0.69 & \texttt{default} \\
+\cline{2-4}
+& Worst & 0.638 & \texttt{Similarity score for article pair:} \\
+\hline
+\end{tabular}
+\end{table*}
+
+\begin{table*}[t]
+\centering
+\small
+\caption{Best and worst prompts for task: StackExchangeClustering.v2}
+\begin{tabular}{|p{0.24\textwidth}|c|c|p{0.58\textwidth}|}
+\hline
+Model & Type & Score & Prompt \\
+\hline
+\multirow{2}{=}{\raggedright\texttt{BAAI/\allowbreak bge-\allowbreak base-\allowbreak en-\allowbreak v1.5}} & Best & 0.573 & \texttt{Cluster representation:} \\
+\cline{2-4}
+& Worst & 0.535 & \texttt{Cluster these stackexchange titles (eng):} \\
+\hline
+\multirow{2}{=}{\raggedright\texttt{BAAI/\allowbreak bge-\allowbreak large-\allowbreak en-\allowbreak v1.5}} & Best & 0.594 & \texttt{default} \\
+\cline{2-4}
+& Worst & 0.54 & \texttt{Cluster these stackexchange titles (eng):} \\
+\hline
+\multirow{2}{=}{\raggedright\texttt{BAAI/\allowbreak bge-\allowbreak small-\allowbreak en-\allowbreak v1.5}} & Best & 0.573 & \texttt{default} \\
+\cline{2-4}
+& Worst & 0.517 & \texttt{Encode for clustering, language eng:} \\
+\hline
+\multirow{2}{=}{\raggedright\texttt{KaLM-\allowbreak Embedding/\allowbreak KaLM-\allowbreak embed...}} & Best & 0.778 & \texttt{Cluster these StackExchange titles:} \\
+\cline{2-4}
+& Worst & 0.556 & \texttt{Group similar texts:} \\
+\hline
+\multirow{2}{=}{\raggedright\texttt{Qwen/\allowbreak Qwen3-\allowbreak Embedding-\allowbreak 0.6B}} & Best & 0.712 & \texttt{default} \\
+\cline{2-4}
+& Worst & 0.565 & \texttt{Cluster representation:} \\
+\hline
+\multirow{2}{=}{\raggedright\texttt{Qwen/\allowbreak Qwen3-\allowbreak Embedding-\allowbreak 4B}} & Best & 0.77 & \texttt{Cluster these stackexchange titles (eng):} \\
+\cline{2-4}
+& Worst & 0.562 & \texttt{Group similar texts:} \\
+\hline
+\multirow{2}{=}{\raggedright\texttt{intfloat/\allowbreak multilingual-\allowbreak e5-\allowbreak ...}} & Best & 0.672 & \texttt{Cluster these StackExchange titles:} \\
+\cline{2-4}
+& Worst & 0.6 & \texttt{default} \\
+\hline
+\end{tabular}
+\end{table*}
+
+\begin{table*}[t]
+\centering
+\small
+\caption{Best and worst prompts for task: Touche2020Retrieval.v3}
+\begin{tabular}{|p{0.24\textwidth}|c|c|p{0.58\textwidth}|}
+\hline
+Model & Type & Score & Prompt \\
+\hline
+\multirow{2}{=}{\raggedright\texttt{BAAI/\allowbreak bge-\allowbreak base-\allowbreak en-\allowbreak v1.5}} & Best & 0.497 & \texttt{default} \\
+\cline{2-4}
+& Worst & 0.048 & \texttt{Encode (eng) for Touché Task 1: Argument Retrieval for Controversial Questions:} \\
+\hline
+\multirow{2}{=}{\raggedright\texttt{BAAI/\allowbreak bge-\allowbreak large-\allowbreak en-\allowbreak v1.5}} & Best & 0.471 & \texttt{default} \\
+\cline{2-4}
+& Worst & 0.03 & \texttt{Encode (eng) for Touché Task 1: Argument Retrieval for Controversial Questions:} \\
+\hline
+\multirow{2}{=}{\raggedright\texttt{BAAI/\allowbreak bge-\allowbreak small-\allowbreak en-\allowbreak v1.5}} & Best & 0.576 & \texttt{default} \\
+\cline{2-4}
+& Worst & 0.021 & \texttt{Encode (eng) for Touché Task 1: Argument Retrieval for Controversial Questions:} \\
+\hline
+\multirow{2}{=}{\raggedright\texttt{KaLM-\allowbreak Embedding/\allowbreak KaLM-\allowbreak embed...}} & Best & 0.637 & \texttt{Query for retrieval:} \\
+\cline{2-4}
+& Worst & 0.315 & \texttt{Encode (eng) for Touché Task 1: Argument Retrieval for Controversial Questions:} \\
+\hline
+\multirow{2}{=}{\raggedright\texttt{Qwen/\allowbreak Qwen3-\allowbreak Embedding-\allowbreak 0.6B}} & Best & 0.699 & \texttt{default} \\
+\cline{2-4}
+& Worst & 0.383 & \texttt{Encode (eng) for Touché Task 1: Argument Retrieval for Controversial Questions:} \\
+\hline
+\multirow{2}{=}{\raggedright\texttt{Qwen/\allowbreak Qwen3-\allowbreak Embedding-\allowbreak 4B}} & Best & 0.733 & \texttt{Query for retrieval:} \\
+\cline{2-4}
+& Worst & 0.733 & \texttt{Query for retrieval:} \\
+\hline
+\multirow{2}{=}{\raggedright\texttt{intfloat/\allowbreak multilingual-\allowbreak e5-\allowbreak ...}} & Best & 0.543 & \texttt{Retrieve arguments for controversial question:} \\
+\cline{2-4}
+& Worst & 0.349 & \texttt{Encode (eng) for Touché Task 1: Argument Retrieval for Controversial Questions:} \\
+\hline
+\end{tabular}
+\end{table*}
+
+\begin{table*}[t]
+\centering
+\small
+\caption{Best and worst prompts for task: TweetSentimentClassification}
+\begin{tabular}{|p{0.24\textwidth}|c|c|p{0.58\textwidth}|}
+\hline
+Model & Type & Score & Prompt \\
+\hline
+\multirow{2}{=}{\raggedright\texttt{BAAI/\allowbreak bge-\allowbreak base-\allowbreak en-\allowbreak v1.5}} & Best & 0.518 & \texttt{Classify the following text:} \\
+\cline{2-4}
+& Worst & 0.417 & \texttt{default} \\
+\hline
+\multirow{2}{=}{\raggedright\texttt{BAAI/\allowbreak bge-\allowbreak large-\allowbreak en-\allowbreak v1.5}} & Best & 0.529 & \texttt{Label the tweet's sentiment:} \\
+\cline{2-4}
+& Worst & 0.427 & \texttt{default} \\
+\hline
+\multirow{2}{=}{\raggedright\texttt{BAAI/\allowbreak bge-\allowbreak small-\allowbreak en-\allowbreak v1.5}} & Best & 0.514 & \texttt{Label this example:} \\
+\cline{2-4}
+& Worst & 0.417 & \texttt{default} \\
+\hline
+\multirow{2}{=}{\raggedright\texttt{KaLM-\allowbreak Embedding/\allowbreak KaLM-\allowbreak embed...}} & Best & 0.704 & \texttt{Classify the sentiment of this tweet:} \\
+\cline{2-4}
+& Worst & 0.534 & \texttt{Determine the class for the given passage:} \\
+\hline
+\multirow{2}{=}{\raggedright\texttt{Qwen/\allowbreak Qwen3-\allowbreak Embedding-\allowbreak 0.6B}} & Best & 0.706 & \texttt{Classify the sentiment of this tweet:} \\
+\cline{2-4}
+& Worst & 0.489 & \texttt{Determine the class for the given passage:} \\
+\hline
+\multirow{2}{=}{\raggedright\texttt{Qwen/\allowbreak Qwen3-\allowbreak Embedding-\allowbreak 4B}} & Best & 0.734 & \texttt{Classify the sentiment of this tweet:} \\
+\cline{2-4}
+& Worst & 0.477 & \texttt{Determine the class for the given passage:} \\
+\hline
+\multirow{2}{=}{\raggedright\texttt{intfloat/\allowbreak multilingual-\allowbreak e5-\allowbreak ...}} & Best & 0.645 & \texttt{eng sentiment analysis – classify:} \\
+\cline{2-4}
+& Worst & 0.485 & \texttt{Determine the class for the given passage:} \\
+\hline
+\end{tabular}
+\end{table*}
