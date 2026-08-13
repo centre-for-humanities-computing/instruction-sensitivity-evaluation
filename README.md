@@ -22,7 +22,7 @@ prompt-hacking/
 │   │   └── prompt_template.py   # Prompt templates & validation for structured output
 │   ├── running_experiments/     # MTEB evaluation runners
 │   │   ├── run_models.py        # Running one model single-thread
-│   │   └── run_models_prallel.py  # Running one model in parallel
+│   │   └── run_models_parallel.py  # Running one model in parallel
 ├── data/
 │   ├── prompts/                 # Generated prompts (JSON)
 │   └── cache_data/mteb_cache/   # Cached MTEB evaluation results
@@ -109,6 +109,15 @@ data/cache_data/mteb_cache/results/
 ## Citation
 
 ```bibtex
+@misc{kostiuk2026promptenoughinstructionsensitivity,
+      title={One prompt is not enough: Instruction Sensitivity Undermines Embedding Model Evaluation}, 
+      author={Yevhen Kostiuk and Kenneth Enevoldsen},
+      year={2026},
+      eprint={2605.22544},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2605.22544}, 
+}
 ```
 
 ## License
