@@ -4,7 +4,7 @@ This repository contains the code and data for the paper _"One prompt is not eno
 
 ## Overview
 
-Instruction-tuned embedding models are typically evaluated with a single, fixed prompt per task. This single-point evaluation hides a critical problem: **these models are highly sensitive to prompt phrasing**. We present an empirical study across **6 embedding models**, **11 datasets**, and **15 task-specific prompts per dataset** (990 total evaluations) showing that:
+Instruction-tuned embedding models are typically evaluated with a single, fixed prompt per task. This single-point evaluation hides a critical problem: **these models are highly sensitive to prompt phrasing**. We present an empirical study across **6 embedding models** and **11 datasets** showing that:
 
 - **Prompt deflation & inflation**: Reported scores can systematically understate or overstate a model's true performance distribution.
 - **Leaderboard fragility**: By selecting prompts favorably, *any* model in our study can be promoted to rank 1 on a simulated leaderboard.
@@ -18,7 +18,7 @@ We recommend that benchmarks transition from single-prompt evaluation to distrib
 prompt-hacking/
 ├── src/
 │   ├── prompt_generation/       # Synthetic prompt generation via LLM
-│   │   ├── generate_prompts.py  # Main script: generates 15 prompts per task using vLLM
+│   │   ├── generate_prompts.py  # Main script: generates prompts per task using vLLM
 │   │   └── prompt_template.py   # Prompt templates & validation for structured output
 │   ├── running_experiments/     # MTEB evaluation runners
 │   │   ├── run_models.py        # Running one model single-thread
