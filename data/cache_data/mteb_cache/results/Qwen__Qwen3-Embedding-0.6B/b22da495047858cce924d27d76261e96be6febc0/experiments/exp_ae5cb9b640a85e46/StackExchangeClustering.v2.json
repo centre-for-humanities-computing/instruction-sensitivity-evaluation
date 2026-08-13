@@ -1,0 +1,82 @@
+{
+  "dataset_revision": "6cbc1f7b2bc0622f2e39d2c77fa502909748c259",
+  "task_name": "StackExchangeClustering.v2",
+  "mteb_version": "2.18.0",
+  "scores": {
+    "test": [
+      {
+        "v_measures": {
+          "Level 0": [
+            0.570264,
+            0.578674,
+            0.585625,
+            0.572936,
+            0.580013,
+            0.582818,
+            0.589242,
+            0.584013,
+            0.573998,
+            0.576122
+          ]
+        },
+        "v_measure": 0.579371,
+        "v_measure_std": 0.005785,
+        "ami_scores": {
+          "Level 0": [
+            0.532039,
+            0.540613,
+            0.54901,
+            0.536328,
+            0.542,
+            0.545381,
+            0.552575,
+            0.546321,
+            0.537073,
+            0.538619
+          ]
+        },
+        "ami": 0.541996,
+        "ami_std": 0.006001,
+        "main_score": 0.579371,
+        "hf_subset": "default",
+        "languages": [
+          "eng-Latn"
+        ],
+        "mteb_version": "2.18.0"
+      }
+    ]
+  },
+  "evaluation_time": 18.191183598944917,
+  "kg_co2_emissions": null,
+  "date": 1784891095.067626,
+  "evaluation_phases": [
+    {
+      "name": "Data loading",
+      "start": 3.270898014307022e-05,
+      "end": 1.2151993750594556,
+      "split": "",
+      "subset": ""
+    },
+    {
+      "name": "Dataset transform",
+      "start": 1.2152096810750663,
+      "end": 8.540436259005219,
+      "split": "",
+      "subset": ""
+    },
+    {
+      "name": "Encoding",
+      "start": 8.54223955096677,
+      "end": 10.559782276977785,
+      "split": "test",
+      "subset": "default"
+    },
+    {
+      "name": "Scoring",
+      "start": 10.58243491500616,
+      "end": 18.18327668402344,
+      "split": "test",
+      "subset": "default"
+    }
+  ]
+}

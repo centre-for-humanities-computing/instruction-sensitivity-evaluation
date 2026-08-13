@@ -1,7 +1,7 @@
 {
   "dataset_revision": "e7a26af6f3ae46b30dde8737f02c07b1505bcc73",
   "task_name": "MedrxivClusteringP2P.v2",
-  "mteb_version": "2.12.16",
+  "mteb_version": "2.18.0",
   "scores": {
     "test": [
       {
@@ -9,27 +9,74 @@
           "Level 0": [
             0.420545,
             0.423043,
-            0.42672,
+            0.423381,
             0.421366,
             0.41951,
             0.426178,
             0.407317,
             0.429266,
-            0.438526,
-            0.417594
+            0.438514,
+            0.417694
           ]
         },
-        "v_measure": 0.423007,
-        "v_measure_std": 0.007748,
-        "main_score": 0.423007,
+        "v_measure": 0.422681,
+        "v_measure_std": 0.007643,
+        "ami_scores": {
+          "Level 0": [
+            0.406957,
+            0.409716,
+            0.409759,
+            0.407987,
+            0.406012,
+            0.412961,
+            0.393822,
+            0.41596,
+            0.425352,
+            0.404211
+          ]
+        },
+        "ami": 0.409274,
+        "ami_std": 0.007741,
+        "main_score": 0.422681,
         "hf_subset": "default",
         "languages": [
           "eng-Latn"
-        ]
+        ],
+        "mteb_version": "2.18.0"
       }
     ]
   },
-  "evaluation_time": 38.408453702926636,
+  "evaluation_time": 66.4118326511234,
   "kg_co2_emissions": null,
-  "date": 1777877416.721231
+  "date": 1786050330.615552,
+  "evaluation_phases": [
+    {
+      "name": "Data loading",
+      "start": 2.585630863904953e-05,
+      "end": 1.2701126052998006,
+      "split": "",
+      "subset": ""
+    },
+    {
+      "name": "Dataset transform",
+      "start": 1.2701221089810133,
+      "end": 1.5442658830434084,
+      "split": "",
+      "subset": ""
+    },
+    {
+      "name": "Encoding",
+      "start": 1.5469368491321802,
+      "end": 64.31003147223964,
+      "split": "test",
+      "subset": "default"
+    },
+    {
+      "name": "Scoring",
+      "start": 64.32666590996087,
+      "end": 66.40851713623852,
+      "split": "test",
+      "subset": "default"
+    }
+  ]
 }

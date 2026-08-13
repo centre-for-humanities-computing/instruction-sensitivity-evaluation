@@ -1,27 +1,65 @@
 {
   "dataset_revision": "6031580fec1f6af667f0bd2da0a551cf4f0b2375",
   "task_name": "STS14",
-  "mteb_version": "2.12.16",
+  "mteb_version": "2.18.0",
   "scores": {
     "test": [
       {
-        "pearson": 0.802576,
-        "spearman": 0.757225,
-        "cosine_pearson": 0.802575,
-        "cosine_spearman": 0.757225,
-        "manhattan_pearson": 0.800613,
-        "manhattan_spearman": 0.757654,
-        "euclidean_pearson": 0.800218,
-        "euclidean_spearman": 0.757225,
-        "main_score": 0.757225,
+        "pearson": 0.802577,
+        "spearman": 0.757227,
+        "cosine_pearson": 0.802577,
+        "cosine_spearman": 0.757227,
+        "manhattan_pearson": 0.800611,
+        "manhattan_spearman": 0.757673,
+        "euclidean_pearson": 0.800219,
+        "euclidean_spearman": 0.757227,
+        "main_score": 0.757227,
         "hf_subset": "default",
         "languages": [
           "eng-Latn"
-        ]
+        ],
+        "mteb_version": "2.18.0"
       }
     ]
   },
-  "evaluation_time": 14.814658880233765,
+  "evaluation_time": 30.898780294228345,
   "kg_co2_emissions": null,
-  "date": 1777876619.254618
+  "date": 1786052240.569802,
+  "evaluation_phases": [
+    {
+      "name": "Data loading",
+      "start": 2.5280285626649857e-05,
+      "end": 2.2979636029340327,
+      "split": "",
+      "subset": ""
+    },
+    {
+      "name": "Dataset transform",
+      "start": 2.29796918714419,
+      "end": 2.2979749152436852,
+      "split": "",
+      "subset": ""
+    },
+    {
+      "name": "Encoding samples 1",
+      "start": 2.313667504116893,
+      "end": 16.937854721210897,
+      "split": "test",
+      "subset": "default"
+    },
+    {
+      "name": "Encoding samples 2",
+      "start": 16.93803648184985,
+      "end": 30.859462118241936,
+      "split": "test",
+      "subset": "default"
+    },
+    {
+      "name": "Scoring",
+      "start": 30.859739560168236,
+      "end": 30.884931281208992,
+      "split": "test",
+      "subset": "default"
+    }
+  ]
 }

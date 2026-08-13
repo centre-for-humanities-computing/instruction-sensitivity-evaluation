@@ -1,0 +1,65 @@
+{
+  "dataset_revision": "ae752c7c21bf194d8b67fd573edf7ae58183cbe3",
+  "task_name": "STS15",
+  "mteb_version": "2.18.0",
+  "scores": {
+    "test": [
+      {
+        "pearson": 0.726695,
+        "spearman": 0.75874,
+        "cosine_pearson": 0.726695,
+        "cosine_spearman": 0.758739,
+        "manhattan_pearson": 0.758201,
+        "manhattan_spearman": 0.758954,
+        "euclidean_pearson": 0.757823,
+        "euclidean_spearman": 0.758739,
+        "main_score": 0.758739,
+        "hf_subset": "default",
+        "languages": [
+          "eng-Latn"
+        ],
+        "mteb_version": "2.18.0"
+      }
+    ]
+  },
+  "evaluation_time": 42.695252542966045,
+  "kg_co2_emissions": null,
+  "date": 1784022408.305717,
+  "evaluation_phases": [
+    {
+      "name": "Data loading",
+      "start": 3.252900205552578e-05,
+      "end": 1.3909290480078198,
+      "split": "",
+      "subset": ""
+    },
+    {
+      "name": "Dataset transform",
+      "start": 1.3909375809598714,
+      "end": 1.3909386929590255,
+      "split": "",
+      "subset": ""
+    },
+    {
+      "name": "Encoding samples 1",
+      "start": 1.4159075889619999,
+      "end": 20.128104392962996,
+      "split": "test",
+      "subset": "default"
+    },
+    {
+      "name": "Encoding samples 2",
+      "start": 20.12830771796871,
+      "end": 42.48075777699705,
+      "split": "test",
+      "subset": "default"
+    },
+    {
+      "name": "Scoring",
+      "start": 42.48095529299462,
+      "end": 42.608236038999166,
+      "split": "test",
+      "subset": "default"
+    }
+  ]
+}

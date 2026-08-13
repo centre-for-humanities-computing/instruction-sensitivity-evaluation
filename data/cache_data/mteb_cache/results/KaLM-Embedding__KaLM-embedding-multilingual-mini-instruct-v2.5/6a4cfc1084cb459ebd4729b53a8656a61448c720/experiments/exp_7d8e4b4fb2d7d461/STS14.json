@@ -1,27 +1,65 @@
 {
   "dataset_revision": "6031580fec1f6af667f0bd2da0a551cf4f0b2375",
   "task_name": "STS14",
-  "mteb_version": "2.12.16",
+  "mteb_version": "2.18.0",
   "scores": {
     "test": [
       {
-        "pearson": 0.832797,
-        "spearman": 0.79712,
-        "cosine_pearson": 0.832797,
-        "cosine_spearman": 0.79712,
-        "manhattan_pearson": 0.830826,
-        "manhattan_spearman": 0.796887,
-        "euclidean_pearson": 0.831118,
-        "euclidean_spearman": 0.79712,
-        "main_score": 0.79712,
+        "pearson": 0.832811,
+        "spearman": 0.797129,
+        "cosine_pearson": 0.832811,
+        "cosine_spearman": 0.797129,
+        "manhattan_pearson": 0.830837,
+        "manhattan_spearman": 0.796899,
+        "euclidean_pearson": 0.83113,
+        "euclidean_spearman": 0.797129,
+        "main_score": 0.797129,
         "hf_subset": "default",
         "languages": [
           "eng-Latn"
-        ]
+        ],
+        "mteb_version": "2.18.0"
       }
     ]
   },
-  "evaluation_time": 10.419132709503174,
+  "evaluation_time": 26.97492955485359,
   "kg_co2_emissions": null,
-  "date": 1777876487.024613
+  "date": 1786051992.18734,
+  "evaluation_phases": [
+    {
+      "name": "Data loading",
+      "start": 5.238410085439682e-05,
+      "end": 6.3612940311431885,
+      "split": "",
+      "subset": ""
+    },
+    {
+      "name": "Dataset transform",
+      "start": 6.3613027348183095,
+      "end": 6.361305086873472,
+      "split": "",
+      "subset": ""
+    },
+    {
+      "name": "Encoding samples 1",
+      "start": 6.39781106589362,
+      "end": 17.12645697593689,
+      "split": "test",
+      "subset": "default"
+    },
+    {
+      "name": "Encoding samples 2",
+      "start": 17.126769649796188,
+      "end": 26.93398030102253,
+      "split": "test",
+      "subset": "default"
+    },
+    {
+      "name": "Scoring",
+      "start": 26.934308686759323,
+      "end": 26.960980985779315,
+      "split": "test",
+      "subset": "default"
+    }
+  ]
 }
