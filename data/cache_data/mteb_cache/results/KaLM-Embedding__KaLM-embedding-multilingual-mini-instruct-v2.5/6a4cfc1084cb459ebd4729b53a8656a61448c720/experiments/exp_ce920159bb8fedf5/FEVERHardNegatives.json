@@ -1,7 +1,7 @@
 {
   "dataset_revision": "080c9ed6267b65029207906e815d44a9240bafca",
   "task_name": "FEVERHardNegatives",
-  "mteb_version": "2.12.16",
+  "mteb_version": "2.18.0",
   "scores": {
     "test": [
       {
@@ -56,12 +56,12 @@
         "nauc_ndcg_at_20_max": 0.11989,
         "nauc_ndcg_at_20_std": -0.316046,
         "nauc_ndcg_at_20_diff1": 0.617043,
-        "nauc_ndcg_at_100_max": 0.114379,
-        "nauc_ndcg_at_100_std": -0.319379,
-        "nauc_ndcg_at_100_diff1": 0.61858,
-        "nauc_ndcg_at_1000_max": 0.114532,
-        "nauc_ndcg_at_1000_std": -0.322685,
-        "nauc_ndcg_at_1000_diff1": 0.624554,
+        "nauc_ndcg_at_100_max": 0.114377,
+        "nauc_ndcg_at_100_std": -0.319381,
+        "nauc_ndcg_at_100_diff1": 0.618579,
+        "nauc_ndcg_at_1000_max": 0.11453,
+        "nauc_ndcg_at_1000_std": -0.322686,
+        "nauc_ndcg_at_1000_diff1": 0.624552,
         "nauc_map_at_1_max": 0.128391,
         "nauc_map_at_1_std": -0.33195,
         "nauc_map_at_1_diff1": 0.646252,
@@ -77,12 +77,12 @@
         "nauc_map_at_20_max": 0.118925,
         "nauc_map_at_20_std": -0.314261,
         "nauc_map_at_20_diff1": 0.610492,
-        "nauc_map_at_100_max": 0.118122,
+        "nauc_map_at_100_max": 0.118121,
         "nauc_map_at_100_std": -0.315131,
-        "nauc_map_at_100_diff1": 0.610788,
-        "nauc_map_at_1000_max": 0.118302,
+        "nauc_map_at_100_diff1": 0.610786,
+        "nauc_map_at_1000_max": 0.118301,
         "nauc_map_at_1000_std": -0.315089,
-        "nauc_map_at_1000_diff1": 0.611145,
+        "nauc_map_at_1000_diff1": 0.611144,
         "nauc_recall_at_1_max": 0.128391,
         "nauc_recall_at_1_std": -0.33195,
         "nauc_recall_at_1_diff1": 0.646252,
@@ -157,11 +157,42 @@
         "hf_subset": "default",
         "languages": [
           "eng-Latn"
-        ]
+        ],
+        "mteb_version": "2.18.0"
       }
     ]
   },
-  "evaluation_time": 1668.9760529994965,
+  "evaluation_time": 3028.475962198805,
   "kg_co2_emissions": null,
-  "date": 1777776889.06072
+  "date": 1785840640.618721,
+  "evaluation_phases": [
+    {
+      "name": "Data loading",
+      "start": 1.539243385195732e-05,
+      "end": 4.327848512213677,
+      "split": "",
+      "subset": ""
+    },
+    {
+      "name": "Dataset transform",
+      "start": 4.327859312295914,
+      "end": 4.327862143982202,
+      "split": "",
+      "subset": ""
+    },
+    {
+      "name": "Encoding queries and documents",
+      "start": 4.341527577023953,
+      "end": 3027.8157217614353,
+      "split": "test",
+      "subset": "default"
+    },
+    {
+      "name": "Scoring",
+      "start": 3027.815985156223,
+      "end": 3028.4467591932043,
+      "split": "test",
+      "subset": "default"
+    }
+  ]
 }

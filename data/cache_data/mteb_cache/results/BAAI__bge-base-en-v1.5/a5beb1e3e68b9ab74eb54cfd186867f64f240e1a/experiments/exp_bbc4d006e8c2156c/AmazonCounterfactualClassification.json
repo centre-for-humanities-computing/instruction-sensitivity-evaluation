@@ -1,0 +1,910 @@
+{
+  "dataset_revision": "1f7e6a9d6fa6e64c53d146e428565640410c0df1",
+  "task_name": "AmazonCounterfactualClassification",
+  "mteb_version": "2.18.1",
+  "scores": {
+    "validation": [
+      {
+        "scores_per_experiment": [
+          {
+            "accuracy": 0.77027,
+            "f1": 0.633338,
+            "f1_weighted": 0.812326,
+            "precision": 0.623253,
+            "precision_weighted": 0.900605,
+            "recall": 0.779496,
+            "recall_weighted": 0.77027,
+            "ap": 0.239382,
+            "ap_weighted": 0.239382
+          },
+          {
+            "accuracy": 0.732733,
+            "f1": 0.605723,
+            "f1_weighted": 0.784477,
+            "precision": 0.610951,
+            "precision_weighted": 0.900182,
+            "recall": 0.771883,
+            "recall_weighted": 0.732733,
+            "ap": 0.222313,
+            "ap_weighted": 0.222313
+          },
+          {
+            "accuracy": 0.716216,
+            "f1": 0.592465,
+            "f1_weighted": 0.771854,
+            "precision": 0.60471,
+            "precision_weighted": 0.89838,
+            "recall": 0.762702,
+            "recall_weighted": 0.716216,
+            "ap": 0.212627,
+            "ap_weighted": 0.212627
+          },
+          {
+            "accuracy": 0.734234,
+            "f1": 0.606949,
+            "f1_weighted": 0.785619,
+            "precision": 0.611547,
+            "precision_weighted": 0.90035,
+            "recall": 0.772718,
+            "recall_weighted": 0.734234,
+            "ap": 0.223242,
+            "ap_weighted": 0.223242
+          },
+          {
+            "accuracy": 0.711712,
+            "f1": 0.578925,
+            "f1_weighted": 0.767809,
+            "precision": 0.591837,
+            "precision_weighted": 0.887084,
+            "recall": 0.727058,
+            "recall_weighted": 0.711712,
+            "ap": 0.191363,
+            "ap_weighted": 0.191363
+          },
+          {
+            "accuracy": 0.701201,
+            "f1": 0.582611,
+            "f1_weighted": 0.760329,
+            "precision": 0.601721,
+            "precision_weighted": 0.899044,
+            "recall": 0.760982,
+            "recall_weighted": 0.701201,
+            "ap": 0.208344,
+            "ap_weighted": 0.208344
+          },
+          {
+            "accuracy": 0.728228,
+            "f1": 0.591827,
+            "f1_weighted": 0.780309,
+            "precision": 0.598017,
+            "precision_weighted": 0.889077,
+            "recall": 0.73624,
+            "recall_weighted": 0.728228,
+            "ap": 0.199887,
+            "ap_weighted": 0.199887
+          },
+          {
+            "accuracy": 0.780781,
+            "f1": 0.638302,
+            "f1_weighted": 0.819639,
+            "precision": 0.624389,
+            "precision_weighted": 0.898075,
+            "recall": 0.772083,
+            "recall_weighted": 0.780781,
+            "ap": 0.238504,
+            "ap_weighted": 0.238504
+          },
+          {
+            "accuracy": 0.68018,
+            "f1": 0.562883,
+            "f1_weighted": 0.743759,
+            "precision": 0.590523,
+            "precision_weighted": 0.892408,
+            "recall": 0.73604,
+            "recall_weighted": 0.68018,
+            "ap": 0.190868,
+            "ap_weighted": 0.190868
+          },
+          {
+            "accuracy": 0.771772,
+            "f1": 0.636797,
+            "f1_weighted": 0.813661,
+            "precision": 0.626154,
+            "precision_weighted": 0.902827,
+            "recall": 0.786958,
+            "recall_weighted": 0.771772,
+            "ap": 0.245024,
+            "ap_weighted": 0.245024
+          }
+        ],
+        "accuracy": 0.732733,
+        "f1": 0.602982,
+        "f1_weighted": 0.783978,
+        "precision": 0.60831,
+        "precision_weighted": 0.896803,
+        "recall": 0.760616,
+        "recall_weighted": 0.732733,
+        "ap": 0.217155,
+        "ap_weighted": 0.217155,
+        "main_score": 0.732733,
+        "hf_subset": "en-ext",
+        "languages": [
+          "eng-Latn"
+        ],
+        "mteb_version": "2.18.1"
+      },
+      {
+        "scores_per_experiment": [
+          {
+            "accuracy": 0.665672,
+            "f1": 0.603114,
+            "f1_weighted": 0.706122,
+            "precision": 0.622219,
+            "precision_weighted": 0.824691,
+            "recall": 0.709231,
+            "recall_weighted": 0.665672,
+            "ap": 0.281263,
+            "ap_weighted": 0.281263
+          },
+          {
+            "accuracy": 0.746269,
+            "f1": 0.678281,
+            "f1_weighted": 0.774965,
+            "precision": 0.671537,
+            "precision_weighted": 0.855427,
+            "recall": 0.778414,
+            "recall_weighted": 0.746269,
+            "ap": 0.352811,
+            "ap_weighted": 0.352811
+          },
+          {
+            "accuracy": 0.689552,
+            "f1": 0.617982,
+            "f1_weighted": 0.726078,
+            "precision": 0.625933,
+            "precision_weighted": 0.822167,
+            "recall": 0.71004,
+            "recall_weighted": 0.689552,
+            "ap": 0.286286,
+            "ap_weighted": 0.286286
+          },
+          {
+            "accuracy": 0.758209,
+            "f1": 0.689036,
+            "f1_weighted": 0.784915,
+            "precision": 0.678533,
+            "precision_weighted": 0.858421,
+            "recall": 0.785634,
+            "recall_weighted": 0.758209,
+            "ap": 0.363667,
+            "ap_weighted": 0.363667
+          },
+          {
+            "accuracy": 0.728358,
+            "f1": 0.66024,
+            "f1_weighted": 0.759693,
+            "precision": 0.658597,
+            "precision_weighted": 0.847211,
+            "recall": 0.760768,
+            "recall_weighted": 0.728358,
+            "ap": 0.332727,
+            "ap_weighted": 0.332727
+          },
+          {
+            "accuracy": 0.740299,
+            "f1": 0.65844,
+            "f1_weighted": 0.767751,
+            "precision": 0.649805,
+            "precision_weighted": 0.831623,
+            "recall": 0.73391,
+            "recall_weighted": 0.740299,
+            "ap": 0.31691,
+            "ap_weighted": 0.31691
+          },
+          {
+            "accuracy": 0.779104,
+            "f1": 0.701268,
+            "f1_weighted": 0.800953,
+            "precision": 0.68388,
+            "precision_weighted": 0.853426,
+            "recall": 0.777823,
+            "recall_weighted": 0.779104,
+            "ap": 0.368181,
+            "ap_weighted": 0.368181
+          },
+          {
+            "accuracy": 0.78806,
+            "f1": 0.699308,
+            "f1_weighted": 0.806103,
+            "precision": 0.680373,
+            "precision_weighted": 0.843017,
+            "recall": 0.755975,
+            "recall_weighted": 0.78806,
+            "ap": 0.355828,
+            "ap_weighted": 0.355828
+          },
+          {
+            "accuracy": 0.785075,
+            "f1": 0.718409,
+            "f1_weighted": 0.807978,
+            "precision": 0.701199,
+            "precision_weighted": 0.87287,
+            "recall": 0.815511,
+            "recall_weighted": 0.785075,
+            "ap": 0.401981,
+            "ap_weighted": 0.401981
+          },
+          {
+            "accuracy": 0.722388,
+            "f1": 0.655064,
+            "f1_weighted": 0.754686,
+            "precision": 0.655472,
+            "precision_weighted": 0.845793,
+            "recall": 0.757158,
+            "recall_weighted": 0.722388,
+            "ap": 0.328078,
+            "ap_weighted": 0.328078
+          }
+        ],
+        "accuracy": 0.740299,
+        "f1": 0.668114,
+        "f1_weighted": 0.768924,
+        "precision": 0.662755,
+        "precision_weighted": 0.845465,
+        "recall": 0.758446,
+        "recall_weighted": 0.740299,
+        "ap": 0.338773,
+        "ap_weighted": 0.338773,
+        "main_score": 0.740299,
+        "hf_subset": "en",
+        "languages": [
+          "eng-Latn"
+        ],
+        "mteb_version": "2.18.1"
+      }
+    ],
+    "test": [
+      {
+        "scores_per_experiment": [
+          {
+            "accuracy": 0.764618,
+            "f1": 0.63345,
+            "f1_weighted": 0.807025,
+            "precision": 0.624857,
+            "precision_weighted": 0.898167,
+            "recall": 0.779615,
+            "recall_weighted": 0.764618,
+            "ap": 0.244265,
+            "ap_weighted": 0.244265
+          },
+          {
+            "accuracy": 0.746627,
+            "f1": 0.622956,
+            "f1_weighted": 0.793894,
+            "precision": 0.621835,
+            "precision_weighted": 0.901029,
+            "recall": 0.785467,
+            "recall_weighted": 0.746627,
+            "ap": 0.241849,
+            "ap_weighted": 0.241849
+          },
+          {
+            "accuracy": 0.701649,
+            "f1": 0.581864,
+            "f1_weighted": 0.759025,
+            "precision": 0.598972,
+            "precision_weighted": 0.890443,
+            "recall": 0.744469,
+            "recall_weighted": 0.701649,
+            "ap": 0.205273,
+            "ap_weighted": 0.205273
+          },
+          {
+            "accuracy": 0.730885,
+            "f1": 0.601056,
+            "f1_weighted": 0.781212,
+            "precision": 0.605494,
+            "precision_weighted": 0.889641,
+            "recall": 0.748072,
+            "recall_weighted": 0.730885,
+            "ap": 0.213774,
+            "ap_weighted": 0.213774
+          },
+          {
+            "accuracy": 0.753373,
+            "f1": 0.628701,
+            "f1_weighted": 0.799017,
+            "precision": 0.624831,
+            "precision_weighted": 0.901853,
+            "recall": 0.789233,
+            "recall_weighted": 0.753373,
+            "ap": 0.246639,
+            "ap_weighted": 0.246639
+          },
+          {
+            "accuracy": 0.72039,
+            "f1": 0.605004,
+            "f1_weighted": 0.774002,
+            "precision": 0.615536,
+            "precision_weighted": 0.90239,
+            "recall": 0.783538,
+            "recall_weighted": 0.72039,
+            "ap": 0.232802,
+            "ap_weighted": 0.232802
+          },
+          {
+            "accuracy": 0.76087,
+            "f1": 0.630187,
+            "f1_weighted": 0.804211,
+            "precision": 0.623038,
+            "precision_weighted": 0.897661,
+            "recall": 0.777523,
+            "recall_weighted": 0.76087,
+            "ap": 0.241488,
+            "ap_weighted": 0.241488
+          },
+          {
+            "accuracy": 0.797601,
+            "f1": 0.668749,
+            "f1_weighted": 0.832292,
+            "precision": 0.647936,
+            "precision_weighted": 0.907881,
+            "recall": 0.813919,
+            "recall_weighted": 0.797601,
+            "ap": 0.283924,
+            "ap_weighted": 0.283924
+          },
+          {
+            "accuracy": 0.72039,
+            "f1": 0.603182,
+            "f1_weighted": 0.773901,
+            "precision": 0.613379,
+            "precision_weighted": 0.900189,
+            "recall": 0.77718,
+            "recall_weighted": 0.72039,
+            "ap": 0.228875,
+            "ap_weighted": 0.228875
+          },
+          {
+            "accuracy": 0.775862,
+            "f1": 0.641329,
+            "f1_weighted": 0.815217,
+            "precision": 0.62849,
+            "precision_weighted": 0.897738,
+            "recall": 0.779534,
+            "recall_weighted": 0.775862,
+            "ap": 0.248613,
+            "ap_weighted": 0.248613
+          }
+        ],
+        "accuracy": 0.747226,
+        "f1": 0.621648,
+        "f1_weighted": 0.79398,
+        "precision": 0.620437,
+        "precision_weighted": 0.898699,
+        "recall": 0.777855,
+        "recall_weighted": 0.747226,
+        "ap": 0.23875,
+        "ap_weighted": 0.23875,
+        "main_score": 0.747226,
+        "hf_subset": "en-ext",
+        "languages": [
+          "eng-Latn"
+        ],
+        "mteb_version": "2.18.1"
+      },
+      {
+        "scores_per_experiment": [
+          {
+            "accuracy": 0.726866,
+            "f1": 0.676213,
+            "f1_weighted": 0.754199,
+            "precision": 0.677302,
+            "precision_weighted": 0.843055,
+            "recall": 0.772458,
+            "recall_weighted": 0.726866,
+            "ap": 0.373111,
+            "ap_weighted": 0.373111
+          },
+          {
+            "accuracy": 0.779104,
+            "f1": 0.720884,
+            "f1_weighted": 0.798511,
+            "precision": 0.705444,
+            "precision_weighted": 0.852765,
+            "recall": 0.796258,
+            "recall_weighted": 0.779104,
+            "ap": 0.416466,
+            "ap_weighted": 0.416466
+          },
+          {
+            "accuracy": 0.723881,
+            "f1": 0.667939,
+            "f1_weighted": 0.750936,
+            "precision": 0.666844,
+            "precision_weighted": 0.830724,
+            "recall": 0.753268,
+            "recall_weighted": 0.723881,
+            "ap": 0.357595,
+            "ap_weighted": 0.357595
+          },
+          {
+            "accuracy": 0.765672,
+            "f1": 0.70932,
+            "f1_weighted": 0.787257,
+            "precision": 0.697539,
+            "precision_weighted": 0.850276,
+            "recall": 0.790799,
+            "recall_weighted": 0.765672,
+            "ap": 0.404535,
+            "ap_weighted": 0.404535
+          },
+          {
+            "accuracy": 0.753731,
+            "f1": 0.700253,
+            "f1_weighted": 0.777353,
+            "precision": 0.692642,
+            "precision_weighted": 0.850391,
+            "recall": 0.789156,
+            "recall_weighted": 0.753731,
+            "ap": 0.397247,
+            "ap_weighted": 0.397247
+          },
+          {
+            "accuracy": 0.738806,
+            "f1": 0.677043,
+            "f1_weighted": 0.763048,
+            "precision": 0.669907,
+            "precision_weighted": 0.827832,
+            "recall": 0.750988,
+            "recall_weighted": 0.738806,
+            "ap": 0.361322,
+            "ap_weighted": 0.361322
+          },
+          {
+            "accuracy": 0.798507,
+            "f1": 0.730267,
+            "f1_weighted": 0.812885,
+            "precision": 0.710861,
+            "precision_weighted": 0.845296,
+            "recall": 0.782315,
+            "recall_weighted": 0.798507,
+            "ap": 0.418141,
+            "ap_weighted": 0.418141
+          },
+          {
+            "accuracy": 0.819403,
+            "f1": 0.756268,
+            "f1_weighted": 0.831808,
+            "precision": 0.734025,
+            "precision_weighted": 0.861157,
+            "recall": 0.809748,
+            "recall_weighted": 0.819403,
+            "ap": 0.457293,
+            "ap_weighted": 0.457293
+          },
+          {
+            "accuracy": 0.753731,
+            "f1": 0.698388,
+            "f1_weighted": 0.777064,
+            "precision": 0.689954,
+            "precision_weighted": 0.846708,
+            "recall": 0.783377,
+            "recall_weighted": 0.753731,
+            "ap": 0.392735,
+            "ap_weighted": 0.392735
+          },
+          {
+            "accuracy": 0.731343,
+            "f1": 0.678328,
+            "f1_weighted": 0.757851,
+            "precision": 0.676825,
+            "precision_weighted": 0.840381,
+            "recall": 0.769463,
+            "recall_weighted": 0.731343,
+            "ap": 0.372516,
+            "ap_weighted": 0.372516
+          }
+        ],
+        "accuracy": 0.759104,
+        "f1": 0.70149,
+        "f1_weighted": 0.781091,
+        "precision": 0.692134,
+        "precision_weighted": 0.844859,
+        "recall": 0.779783,
+        "recall_weighted": 0.759104,
+        "ap": 0.395096,
+        "ap_weighted": 0.395096,
+        "main_score": 0.759104,
+        "hf_subset": "en",
+        "languages": [
+          "eng-Latn"
+        ],
+        "mteb_version": "2.18.1"
+      }
+    ]
+  },
+  "evaluation_time": 15.909577537095174,
+  "kg_co2_emissions": null,
+  "date": 1784101937.116564,
+  "evaluation_phases": [
+    {
+      "name": "Data loading",
+      "start": 2.4239998310804367e-05,
+      "end": 1.2770081560593098,
+      "split": "",
+      "subset": ""
+    },
+    {
+      "name": "Dataset transform",
+      "start": 1.2770272600464523,
+      "end": 1.2770281399134547,
+      "split": "",
+      "subset": ""
+    },
+    {
+      "name": "Encoding training samples",
+      "start": 2.034772641956806,
+      "end": 2.5793899989221245,
+      "split": "validation",
+      "subset": "en-ext"
+    },
+    {
+      "name": "Encoding test samples",
+      "start": 2.596222705906257,
+      "end": 3.2196681909263134,
+      "split": "validation",
+      "subset": "en-ext"
+    },
+    {
+      "name": "Running experiment (0/10)",
+      "start": 3.219837984070182,
+      "end": 3.382909761974588,
+      "split": "validation",
+      "subset": "en-ext"
+    },
+    {
+      "name": "Running experiment (1/10)",
+      "start": 3.3830144989769906,
+      "end": 3.541823515901342,
+      "split": "validation",
+      "subset": "en-ext"
+    },
+    {
+      "name": "Running experiment (2/10)",
+      "start": 3.5419200758915395,
+      "end": 3.7002864500973374,
+      "split": "validation",
+      "subset": "en-ext"
+    },
+    {
+      "name": "Running experiment (3/10)",
+      "start": 3.7003806428983808,
+      "end": 3.855361365014687,
+      "split": "validation",
+      "subset": "en-ext"
+    },
+    {
+      "name": "Running experiment (4/10)",
+      "start": 3.855451701907441,
+      "end": 4.0098062439356,
+      "split": "validation",
+      "subset": "en-ext"
+    },
+    {
+      "name": "Running experiment (5/10)",
+      "start": 4.00989437289536,
+      "end": 4.170464423950762,
+      "split": "validation",
+      "subset": "en-ext"
+    },
+    {
+      "name": "Running experiment (6/10)",
+      "start": 4.170551351970062,
+      "end": 4.32957496191375,
+      "split": "validation",
+      "subset": "en-ext"
+    },
+    {
+      "name": "Running experiment (7/10)",
+      "start": 4.329665011027828,
+      "end": 4.488156697945669,
+      "split": "validation",
+      "subset": "en-ext"
+    },
+    {
+      "name": "Running experiment (8/10)",
+      "start": 4.488241897895932,
+      "end": 4.64293031510897,
+      "split": "validation",
+      "subset": "en-ext"
+    },
+    {
+      "name": "Running experiment (9/10)",
+      "start": 4.643020699033514,
+      "end": 4.797358473064378,
+      "split": "validation",
+      "subset": "en-ext"
+    },
+    {
+      "name": "Scoring",
+      "start": 3.2197657281067222,
+      "end": 4.797360426047817,
+      "split": "validation",
+      "subset": "en-ext"
+    },
+    {
+      "name": "Encoding training samples",
+      "start": 5.210305677028373,
+      "end": 5.747676559025422,
+      "split": "validation",
+      "subset": "en"
+    },
+    {
+      "name": "Encoding test samples",
+      "start": 5.778830758994445,
+      "end": 6.102469530887902,
+      "split": "validation",
+      "subset": "en"
+    },
+    {
+      "name": "Running experiment (0/10)",
+      "start": 6.102750157006085,
+      "end": 6.234184867935255,
+      "split": "validation",
+      "subset": "en"
+    },
+    {
+      "name": "Running experiment (1/10)",
+      "start": 6.234287365106866,
+      "end": 6.320707011036575,
+      "split": "validation",
+      "subset": "en"
+    },
+    {
+      "name": "Running experiment (2/10)",
+      "start": 6.320795011008158,
+      "end": 6.405674216104671,
+      "split": "validation",
+      "subset": "en"
+    },
+    {
+      "name": "Running experiment (3/10)",
+      "start": 6.405759335961193,
+      "end": 6.490931038977578,
+      "split": "validation",
+      "subset": "en"
+    },
+    {
+      "name": "Running experiment (4/10)",
+      "start": 6.491024783113971,
+      "end": 6.576733592897654,
+      "split": "validation",
+      "subset": "en"
+    },
+    {
+      "name": "Running experiment (5/10)",
+      "start": 6.576819577021524,
+      "end": 6.661992544075474,
+      "split": "validation",
+      "subset": "en"
+    },
+    {
+      "name": "Running experiment (6/10)",
+      "start": 6.662080032052472,
+      "end": 6.748144620098174,
+      "split": "validation",
+      "subset": "en"
+    },
+    {
+      "name": "Running experiment (7/10)",
+      "start": 6.7482286361046135,
+      "end": 6.834979180013761,
+      "split": "validation",
+      "subset": "en"
+    },
+    {
+      "name": "Running experiment (8/10)",
+      "start": 6.835068668937311,
+      "end": 6.917407905915752,
+      "split": "validation",
+      "subset": "en"
+    },
+    {
+      "name": "Running experiment (9/10)",
+      "start": 6.917489171028137,
+      "end": 7.000474828062579,
+      "split": "validation",
+      "subset": "en"
+    },
+    {
+      "name": "Scoring",
+      "start": 6.102604907937348,
+      "end": 7.000476443907246,
+      "split": "validation",
+      "subset": "en"
+    },
+    {
+      "name": "Encoding training samples",
+      "start": 7.761606998043135,
+      "end": 8.316132972948253,
+      "split": "test",
+      "subset": "en-ext"
+    },
+    {
+      "name": "Encoding test samples",
+      "start": 8.361865851096809,
+      "end": 9.547438956098631,
+      "split": "test",
+      "subset": "en-ext"
+    },
+    {
+      "name": "Running experiment (0/10)",
+      "start": 9.547743421979249,
+      "end": 9.894525738898665,
+      "split": "test",
+      "subset": "en-ext"
+    },
+    {
+      "name": "Running experiment (1/10)",
+      "start": 9.894648123998195,
+      "end": 10.19612054200843,
+      "split": "test",
+      "subset": "en-ext"
+    },
+    {
+      "name": "Running experiment (2/10)",
+      "start": 10.196218190947548,
+      "end": 10.498972024070099,
+      "split": "test",
+      "subset": "en-ext"
+    },
+    {
+      "name": "Running experiment (3/10)",
+      "start": 10.499071832979098,
+      "end": 10.83113748789765,
+      "split": "test",
+      "subset": "en-ext"
+    },
+    {
+      "name": "Running experiment (4/10)",
+      "start": 10.83123689610511,
+      "end": 11.13597080600448,
+      "split": "test",
+      "subset": "en-ext"
+    },
+    {
+      "name": "Running experiment (5/10)",
+      "start": 11.13606722210534,
+      "end": 11.440711243078113,
+      "split": "test",
+      "subset": "en-ext"
+    },
+    {
+      "name": "Running experiment (6/10)",
+      "start": 11.440803020028397,
+      "end": 11.747821230906993,
+      "split": "test",
+      "subset": "en-ext"
+    },
+    {
+      "name": "Running experiment (7/10)",
+      "start": 11.747914415085688,
+      "end": 12.0553978451062,
+      "split": "test",
+      "subset": "en-ext"
+    },
+    {
+      "name": "Running experiment (8/10)",
+      "start": 12.0554892369546,
+      "end": 12.35869086603634,
+      "split": "test",
+      "subset": "en-ext"
+    },
+    {
+      "name": "Running experiment (9/10)",
+      "start": 12.35878425789997,
+      "end": 12.661789565114304,
+      "split": "test",
+      "subset": "en-ext"
+    },
+    {
+      "name": "Scoring",
+      "start": 9.54758727690205,
+      "end": 12.661791532998905,
+      "split": "test",
+      "subset": "en-ext"
+    },
+    {
+      "name": "Encoding training samples",
+      "start": 13.079229611903429,
+      "end": 13.640434825094417,
+      "split": "test",
+      "subset": "en"
+    },
+    {
+      "name": "Encoding test samples",
+      "start": 13.657632031012326,
+      "end": 14.320420212112367,
+      "split": "test",
+      "subset": "en"
+    },
+    {
+      "name": "Running experiment (0/10)",
+      "start": 14.320585781009868,
+      "end": 14.483034722972661,
+      "split": "test",
+      "subset": "en"
+    },
+    {
+      "name": "Running experiment (1/10)",
+      "start": 14.48313048388809,
+      "end": 14.641672058962286,
+      "split": "test",
+      "subset": "en"
+    },
+    {
+      "name": "Running experiment (2/10)",
+      "start": 14.64175908290781,
+      "end": 14.799265035893768,
+      "split": "test",
+      "subset": "en"
+    },
+    {
+      "name": "Running experiment (3/10)",
+      "start": 14.799353084992617,
+      "end": 14.95924805989489,
+      "split": "test",
+      "subset": "en"
+    },
+    {
+      "name": "Running experiment (4/10)",
+      "start": 14.959337404929101,
+      "end": 15.119091578992084,
+      "split": "test",
+      "subset": "en"
+    },
+    {
+      "name": "Running experiment (5/10)",
+      "start": 15.119179338915274,
+      "end": 15.276993437903002,
+      "split": "test",
+      "subset": "en"
+    },
+    {
+      "name": "Running experiment (6/10)",
+      "start": 15.277079231105745,
+      "end": 15.434421631041914,
+      "split": "test",
+      "subset": "en"
+    },
+    {
+      "name": "Running experiment (7/10)",
+      "start": 15.434506926918402,
+      "end": 15.593646857887506,
+      "split": "test",
+      "subset": "en"
+    },
+    {
+      "name": "Running experiment (8/10)",
+      "start": 15.593731273896992,
+      "end": 15.750216756947339,
+      "split": "test",
+      "subset": "en"
+    },
+    {
+      "name": "Running experiment (9/10)",
+      "start": 15.750302310101688,
+      "end": 15.905925611965358,
+      "split": "test",
+      "subset": "en"
+    },
+    {
+      "name": "Scoring",
+      "start": 14.320512579986826,
+      "end": 15.905927740037441,
+      "split": "test",
+      "subset": "en"
+    }
+  ]
+}

@@ -1,35 +1,82 @@
 {
   "dataset_revision": "e7a26af6f3ae46b30dde8737f02c07b1505bcc73",
   "task_name": "MedrxivClusteringP2P.v2",
-  "mteb_version": "2.12.16",
+  "mteb_version": "2.18.0",
   "scores": {
     "test": [
       {
         "v_measures": {
           "Level 0": [
             0.38374,
-            0.388071,
+            0.387969,
             0.386742,
-            0.38045,
-            0.386552,
+            0.372413,
+            0.38643,
             0.378875,
-            0.376919,
+            0.374567,
             0.3843,
-            0.390705,
+            0.390993,
             0.379712
           ]
         },
-        "v_measure": 0.383607,
-        "v_measure_std": 0.004261,
-        "main_score": 0.383607,
+        "v_measure": 0.382574,
+        "v_measure_std": 0.005708,
+        "ami_scores": {
+          "Level 0": [
+            0.369476,
+            0.374238,
+            0.372832,
+            0.358444,
+            0.372351,
+            0.364924,
+            0.360414,
+            0.370468,
+            0.377025,
+            0.365763
+          ]
+        },
+        "ami": 0.368593,
+        "ami_std": 0.005751,
+        "main_score": 0.382574,
         "hf_subset": "default",
         "languages": [
           "eng-Latn"
-        ]
+        ],
+        "mteb_version": "2.18.0"
       }
     ]
   },
-  "evaluation_time": 38.09864044189453,
+  "evaluation_time": 66.18344314629212,
   "kg_co2_emissions": null,
-  "date": 1777877576.573476
+  "date": 1786050599.699971,
+  "evaluation_phases": [
+    {
+      "name": "Data loading",
+      "start": 2.2703781723976135e-05,
+      "end": 1.341006277129054,
+      "split": "",
+      "subset": ""
+    },
+    {
+      "name": "Dataset transform",
+      "start": 1.3410154930315912,
+      "end": 1.5987251829355955,
+      "split": "",
+      "subset": ""
+    },
+    {
+      "name": "Encoding",
+      "start": 1.6014832691289485,
+      "end": 64.06811721809208,
+      "split": "test",
+      "subset": "default"
+    },
+    {
+      "name": "Scoring",
+      "start": 64.0846110121347,
+      "end": 66.18014207994565,
+      "split": "test",
+      "subset": "default"
+    }
+  ]
 }

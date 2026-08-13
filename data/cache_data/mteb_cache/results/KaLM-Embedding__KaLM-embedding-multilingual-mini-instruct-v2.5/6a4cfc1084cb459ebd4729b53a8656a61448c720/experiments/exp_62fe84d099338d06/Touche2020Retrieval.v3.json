@@ -1,7 +1,7 @@
 {
   "dataset_revision": "431886eaecc48f067a3975b70d0949ea2862463c",
   "task_name": "Touche2020Retrieval.v3",
-  "mteb_version": "2.12.16",
+  "mteb_version": "2.18.0",
   "scores": {
     "test": [
       {
@@ -9,16 +9,16 @@
         "ndcg_at_3": 0.70489,
         "ndcg_at_5": 0.66148,
         "ndcg_at_10": 0.60537,
-        "ndcg_at_20": 0.53935,
-        "ndcg_at_100": 0.61575,
-        "ndcg_at_1000": 0.72598,
+        "ndcg_at_20": 0.53934,
+        "ndcg_at_100": 0.61574,
+        "ndcg_at_1000": 0.72597,
         "map_at_1": 0.03155,
         "map_at_3": 0.08136,
         "map_at_5": 0.1204,
         "map_at_10": 0.19603,
-        "map_at_20": 0.28127,
-        "map_at_100": 0.38818,
-        "map_at_1000": 0.41851,
+        "map_at_20": 0.28125,
+        "map_at_100": 0.38815,
+        "map_at_1000": 0.41849,
         "recall_at_1": 0.03155,
         "recall_at_3": 0.08485,
         "recall_at_5": 0.12906,
@@ -53,15 +53,15 @@
         "nauc_ndcg_at_10_max": 0.112906,
         "nauc_ndcg_at_10_std": 0.157593,
         "nauc_ndcg_at_10_diff1": 0.101942,
-        "nauc_ndcg_at_20_max": 0.117619,
-        "nauc_ndcg_at_20_std": 0.137434,
-        "nauc_ndcg_at_20_diff1": 0.101748,
-        "nauc_ndcg_at_100_max": 0.083116,
-        "nauc_ndcg_at_100_std": 0.237083,
-        "nauc_ndcg_at_100_diff1": 0.137874,
-        "nauc_ndcg_at_1000_max": 0.242662,
-        "nauc_ndcg_at_1000_std": 0.390981,
-        "nauc_ndcg_at_1000_diff1": 0.082526,
+        "nauc_ndcg_at_20_max": 0.117649,
+        "nauc_ndcg_at_20_std": 0.137319,
+        "nauc_ndcg_at_20_diff1": 0.101791,
+        "nauc_ndcg_at_100_max": 0.083205,
+        "nauc_ndcg_at_100_std": 0.236996,
+        "nauc_ndcg_at_100_diff1": 0.137934,
+        "nauc_ndcg_at_1000_max": 0.242809,
+        "nauc_ndcg_at_1000_std": 0.390859,
+        "nauc_ndcg_at_1000_diff1": 0.082592,
         "nauc_map_at_1_max": -0.237892,
         "nauc_map_at_1_std": -0.279112,
         "nauc_map_at_1_diff1": 0.164152,
@@ -74,15 +74,15 @@
         "nauc_map_at_10_max": 0.012241,
         "nauc_map_at_10_std": -0.152795,
         "nauc_map_at_10_diff1": 0.29306,
-        "nauc_map_at_20_max": 0.080193,
-        "nauc_map_at_20_std": -0.074266,
-        "nauc_map_at_20_diff1": 0.271249,
-        "nauc_map_at_100_max": 0.116512,
-        "nauc_map_at_100_std": 0.08042,
-        "nauc_map_at_100_diff1": 0.198639,
-        "nauc_map_at_1000_max": 0.149947,
-        "nauc_map_at_1000_std": 0.122513,
-        "nauc_map_at_1000_diff1": 0.182572,
+        "nauc_map_at_20_max": 0.080233,
+        "nauc_map_at_20_std": -0.074452,
+        "nauc_map_at_20_diff1": 0.271314,
+        "nauc_map_at_100_max": 0.116635,
+        "nauc_map_at_100_std": 0.080247,
+        "nauc_map_at_100_diff1": 0.19878,
+        "nauc_map_at_1000_max": 0.150079,
+        "nauc_map_at_1000_std": 0.122316,
+        "nauc_map_at_1000_diff1": 0.182699,
         "nauc_recall_at_1_max": -0.237892,
         "nauc_recall_at_1_std": -0.279112,
         "nauc_recall_at_1_diff1": 0.164152,
@@ -157,11 +157,42 @@
         "hf_subset": "default",
         "languages": [
           "eng-Latn"
-        ]
+        ],
+        "mteb_version": "2.18.0"
       }
     ]
   },
-  "evaluation_time": 5614.000199079514,
+  "evaluation_time": 9534.457180463709,
   "kg_co2_emissions": null,
-  "date": 1777819225.182537
+  "date": 1786264889.090712,
+  "evaluation_phases": [
+    {
+      "name": "Data loading",
+      "start": 2.8592068701982498e-05,
+      "end": 7.114875543862581,
+      "split": "",
+      "subset": ""
+    },
+    {
+      "name": "Dataset transform",
+      "start": 7.114885511808097,
+      "end": 7.114886631723493,
+      "split": "",
+      "subset": ""
+    },
+    {
+      "name": "Encoding queries and documents",
+      "start": 7.1181336138397455,
+      "end": 9534.412277824711,
+      "split": "test",
+      "subset": "default"
+    },
+    {
+      "name": "Scoring",
+      "start": 9534.41239723377,
+      "end": 9534.45250811195,
+      "split": "test",
+      "subset": "default"
+    }
+  ]
 }

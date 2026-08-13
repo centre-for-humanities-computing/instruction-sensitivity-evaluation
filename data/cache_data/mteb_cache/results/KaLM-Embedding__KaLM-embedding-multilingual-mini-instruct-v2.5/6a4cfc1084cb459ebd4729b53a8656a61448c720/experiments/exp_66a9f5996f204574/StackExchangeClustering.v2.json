@@ -1,35 +1,82 @@
 {
   "dataset_revision": "6cbc1f7b2bc0622f2e39d2c77fa502909748c259",
   "task_name": "StackExchangeClustering.v2",
-  "mteb_version": "2.12.16",
+  "mteb_version": "2.18.0",
   "scores": {
     "test": [
       {
         "v_measures": {
           "Level 0": [
-            0.694951,
+            0.695985,
             0.677825,
             0.681901,
-            0.676231,
+            0.676347,
             0.690348,
-            0.688546,
-            0.671053,
-            0.69212,
-            0.676776,
+            0.688436,
+            0.68347,
+            0.692211,
+            0.677845,
             0.665381
           ]
         },
-        "v_measure": 0.681513,
-        "v_measure_std": 0.009243,
-        "main_score": 0.681513,
+        "v_measure": 0.682975,
+        "v_measure_std": 0.00864,
+        "ami_scores": {
+          "Level 0": [
+            0.667132,
+            0.647223,
+            0.651343,
+            0.647737,
+            0.660438,
+            0.659583,
+            0.653669,
+            0.663229,
+            0.646769,
+            0.634583
+          ]
+        },
+        "ami": 0.653171,
+        "ami_std": 0.009192,
+        "main_score": 0.682975,
         "hf_subset": "default",
         "languages": [
           "eng-Latn"
-        ]
+        ],
+        "mteb_version": "2.18.0"
       }
     ]
   },
-  "evaluation_time": 6.385018348693848,
+  "evaluation_time": 24.1558283790946,
   "kg_co2_emissions": null,
-  "date": 1777877100.091482
+  "date": 1786054377.884627,
+  "evaluation_phases": [
+    {
+      "name": "Data loading",
+      "start": 2.8847716748714447e-05,
+      "end": 6.38057997263968,
+      "split": "",
+      "subset": ""
+    },
+    {
+      "name": "Dataset transform",
+      "start": 6.3805884048342705,
+      "end": 13.771117753814906,
+      "split": "",
+      "subset": ""
+    },
+    {
+      "name": "Encoding",
+      "start": 13.77245080564171,
+      "end": 21.06162721477449,
+      "split": "test",
+      "subset": "default"
+    },
+    {
+      "name": "Scoring",
+      "start": 21.08463464397937,
+      "end": 24.15259843179956,
+      "split": "test",
+      "subset": "default"
+    }
+  ]
 }

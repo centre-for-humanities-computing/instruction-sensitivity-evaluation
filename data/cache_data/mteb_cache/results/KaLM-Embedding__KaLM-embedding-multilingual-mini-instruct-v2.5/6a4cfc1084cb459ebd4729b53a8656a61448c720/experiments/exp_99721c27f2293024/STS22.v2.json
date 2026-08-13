@@ -1,27 +1,65 @@
 {
   "dataset_revision": "d31f33a128469b20e357535c39b82fb3c3f6f2bd",
   "task_name": "STS22.v2",
-  "mteb_version": "2.12.16",
+  "mteb_version": "2.18.0",
   "scores": {
     "test": [
       {
-        "pearson": 0.68822,
-        "spearman": 0.690161,
-        "cosine_pearson": 0.68822,
-        "cosine_spearman": 0.690161,
-        "manhattan_pearson": 0.705054,
+        "pearson": 0.688211,
+        "spearman": 0.690217,
+        "cosine_pearson": 0.688211,
+        "cosine_spearman": 0.690217,
+        "manhattan_pearson": 0.705044,
         "manhattan_spearman": 0.687447,
-        "euclidean_pearson": 0.705714,
-        "euclidean_spearman": 0.690161,
-        "main_score": 0.690161,
+        "euclidean_pearson": 0.705707,
+        "euclidean_spearman": 0.690217,
+        "main_score": 0.690217,
         "hf_subset": "en",
         "languages": [
           "eng-Latn"
-        ]
+        ],
+        "mteb_version": "2.18.0"
       }
     ]
   },
-  "evaluation_time": 10.55389142036438,
+  "evaluation_time": 16.88992798468098,
   "kg_co2_emissions": null,
-  "date": 1777876793.503293
+  "date": 1786054033.454512,
+  "evaluation_phases": [
+    {
+      "name": "Data loading",
+      "start": 2.667214721441269e-05,
+      "end": 0.8166343732737005,
+      "split": "",
+      "subset": ""
+    },
+    {
+      "name": "Dataset transform",
+      "start": 0.8166458932682872,
+      "end": 0.8166473009623587,
+      "split": "",
+      "subset": ""
+    },
+    {
+      "name": "Encoding samples 1",
+      "start": 0.819908301346004,
+      "end": 8.861987855285406,
+      "split": "test",
+      "subset": "en"
+    },
+    {
+      "name": "Encoding samples 2",
+      "start": 8.86226281709969,
+      "end": 16.868622937239707,
+      "split": "test",
+      "subset": "en"
+    },
+    {
+      "name": "Scoring",
+      "start": 16.868731338065118,
+      "end": 16.87468944210559,
+      "split": "test",
+      "subset": "en"
+    }
+  ]
 }

@@ -1,35 +1,82 @@
 {
   "dataset_revision": "e7a26af6f3ae46b30dde8737f02c07b1505bcc73",
   "task_name": "MedrxivClusteringP2P.v2",
-  "mteb_version": "2.12.16",
+  "mteb_version": "2.18.0",
   "scores": {
     "test": [
       {
         "v_measures": {
           "Level 0": [
-            0.387935,
+            0.387564,
             0.36448,
-            0.377853,
+            0.378456,
             0.37654,
             0.389112,
             0.381336,
-            0.38535,
-            0.379571,
+            0.38597,
+            0.377352,
             0.383701,
             0.390153
           ]
         },
-        "v_measure": 0.381603,
-        "v_measure_std": 0.007247,
-        "main_score": 0.381603,
+        "v_measure": 0.381467,
+        "v_measure_std": 0.007316,
+        "ami_scores": {
+          "Level 0": [
+            0.373415,
+            0.350043,
+            0.364191,
+            0.362312,
+            0.37515,
+            0.367174,
+            0.372049,
+            0.363017,
+            0.369538,
+            0.376307
+          ]
+        },
+        "ami": 0.36732,
+        "ami_std": 0.007473,
+        "main_score": 0.381467,
         "hf_subset": "default",
         "languages": [
           "eng-Latn"
-        ]
+        ],
+        "mteb_version": "2.18.0"
       }
     ]
   },
-  "evaluation_time": 37.99574422836304,
+  "evaluation_time": 65.65237873792648,
   "kg_co2_emissions": null,
-  "date": 1777877027.41855
+  "date": 1786049069.270285,
+  "evaluation_phases": [
+    {
+      "name": "Data loading",
+      "start": 2.4783890694379807e-05,
+      "end": 1.4366301191039383,
+      "split": "",
+      "subset": ""
+    },
+    {
+      "name": "Dataset transform",
+      "start": 1.4366389829665422,
+      "end": 1.7047472218982875,
+      "split": "",
+      "subset": ""
+    },
+    {
+      "name": "Encoding",
+      "start": 1.7075321720913053,
+      "end": 63.62971458910033,
+      "split": "test",
+      "subset": "default"
+    },
+    {
+      "name": "Scoring",
+      "start": 63.64605937618762,
+      "end": 65.64910690393299,
+      "split": "test",
+      "subset": "default"
+    }
+  ]
 }

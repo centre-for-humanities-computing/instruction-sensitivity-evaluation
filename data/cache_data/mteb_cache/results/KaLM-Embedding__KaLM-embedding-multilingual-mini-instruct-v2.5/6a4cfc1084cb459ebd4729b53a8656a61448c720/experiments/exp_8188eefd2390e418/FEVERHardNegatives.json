@@ -1,7 +1,7 @@
 {
   "dataset_revision": "080c9ed6267b65029207906e815d44a9240bafca",
   "task_name": "FEVERHardNegatives",
-  "mteb_version": "2.12.16",
+  "mteb_version": "2.18.0",
   "scores": {
     "test": [
       {
@@ -9,7 +9,7 @@
         "ndcg_at_3": 0.82443,
         "ndcg_at_5": 0.83793,
         "ndcg_at_10": 0.84739,
-        "ndcg_at_20": 0.85012,
+        "ndcg_at_20": 0.85011,
         "ndcg_at_100": 0.85418,
         "ndcg_at_1000": 0.85679,
         "map_at_1": 0.7018,
@@ -53,15 +53,15 @@
         "nauc_ndcg_at_10_max": 0.069208,
         "nauc_ndcg_at_10_std": -0.348064,
         "nauc_ndcg_at_10_diff1": 0.574741,
-        "nauc_ndcg_at_20_max": 0.06538,
-        "nauc_ndcg_at_20_std": -0.347668,
-        "nauc_ndcg_at_20_diff1": 0.580816,
-        "nauc_ndcg_at_100_max": 0.063315,
-        "nauc_ndcg_at_100_std": -0.351096,
-        "nauc_ndcg_at_100_diff1": 0.583665,
-        "nauc_ndcg_at_1000_max": 0.06212,
-        "nauc_ndcg_at_1000_std": -0.354373,
-        "nauc_ndcg_at_1000_diff1": 0.58741,
+        "nauc_ndcg_at_20_max": 0.065409,
+        "nauc_ndcg_at_20_std": -0.347636,
+        "nauc_ndcg_at_20_diff1": 0.58084,
+        "nauc_ndcg_at_100_max": 0.063345,
+        "nauc_ndcg_at_100_std": -0.351065,
+        "nauc_ndcg_at_100_diff1": 0.583691,
+        "nauc_ndcg_at_1000_max": 0.062151,
+        "nauc_ndcg_at_1000_std": -0.35434,
+        "nauc_ndcg_at_1000_diff1": 0.587436,
         "nauc_map_at_1_max": 0.068006,
         "nauc_map_at_1_std": -0.35731,
         "nauc_map_at_1_diff1": 0.612307,
@@ -74,15 +74,15 @@
         "nauc_map_at_10_max": 0.067711,
         "nauc_map_at_10_std": -0.348113,
         "nauc_map_at_10_diff1": 0.576083,
-        "nauc_map_at_20_max": 0.06662,
-        "nauc_map_at_20_std": -0.348325,
-        "nauc_map_at_20_diff1": 0.577808,
-        "nauc_map_at_100_max": 0.066479,
-        "nauc_map_at_100_std": -0.349035,
-        "nauc_map_at_100_diff1": 0.578428,
-        "nauc_map_at_1000_max": 0.066513,
-        "nauc_map_at_1000_std": -0.349021,
-        "nauc_map_at_1000_diff1": 0.578605,
+        "nauc_map_at_20_max": 0.066651,
+        "nauc_map_at_20_std": -0.348291,
+        "nauc_map_at_20_diff1": 0.577834,
+        "nauc_map_at_100_max": 0.06651,
+        "nauc_map_at_100_std": -0.349002,
+        "nauc_map_at_100_diff1": 0.578454,
+        "nauc_map_at_1000_max": 0.066544,
+        "nauc_map_at_1000_std": -0.348987,
+        "nauc_map_at_1000_diff1": 0.578631,
         "nauc_recall_at_1_max": 0.068006,
         "nauc_recall_at_1_std": -0.35731,
         "nauc_recall_at_1_diff1": 0.612307,
@@ -157,11 +157,42 @@
         "hf_subset": "default",
         "languages": [
           "eng-Latn"
-        ]
+        ],
+        "mteb_version": "2.18.0"
       }
     ]
   },
-  "evaluation_time": 1668.499217748642,
+  "evaluation_time": 3031.0013408665545,
   "kg_co2_emissions": null,
-  "date": 1777864637.587804
+  "date": 1785870979.795996,
+  "evaluation_phases": [
+    {
+      "name": "Data loading",
+      "start": 1.4993362128734589e-05,
+      "end": 3.847573295235634,
+      "split": "",
+      "subset": ""
+    },
+    {
+      "name": "Dataset transform",
+      "start": 3.8475801912136376,
+      "end": 3.847581119276583,
+      "split": "",
+      "subset": ""
+    },
+    {
+      "name": "Encoding queries and documents",
+      "start": 3.853737151250243,
+      "end": 3030.384994391352,
+      "split": "test",
+      "subset": "default"
+    },
+    {
+      "name": "Scoring",
+      "start": 3030.3852365212515,
+      "end": 3030.9728102399968,
+      "split": "test",
+      "subset": "default"
+    }
+  ]
 }

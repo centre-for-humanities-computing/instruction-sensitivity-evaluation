@@ -1,7 +1,7 @@
 {
   "dataset_revision": "5dddcb139010208a28c3dcc2568560061c210097",
   "task_name": "MasakhaNEWSClusteringS2S",
-  "mteb_version": "2.12.16",
+  "mteb_version": "2.18.0",
   "scores": {
     "test": [
       {
@@ -18,11 +18,98 @@
         "hf_subset": "eng",
         "languages": [
           "eng-Latn"
-        ]
+        ],
+        "mteb_version": "2.18.0"
       }
     ]
   },
-  "evaluation_time": 1.821821928024292,
+  "evaluation_time": 4.313907826319337,
   "kg_co2_emissions": null,
-  "date": 1777877760.101564
+  "date": 1786048750.451886,
+  "evaluation_phases": [
+    {
+      "name": "Data loading",
+      "start": 3.033597022294998e-05,
+      "end": 0.4979917840100825,
+      "split": "",
+      "subset": ""
+    },
+    {
+      "name": "Dataset transform",
+      "start": 0.497997575905174,
+      "end": 0.4979989039711654,
+      "split": "",
+      "subset": ""
+    },
+    {
+      "name": "Encoding",
+      "start": 0.5039806170389056,
+      "end": 1.2381671317853034,
+      "split": "test",
+      "subset": "eng"
+    },
+    {
+      "name": "Scoring",
+      "start": 1.2383409887552261,
+      "end": 1.2861075079999864,
+      "split": "test",
+      "subset": "eng"
+    },
+    {
+      "name": "Encoding",
+      "start": 1.293532847892493,
+      "end": 1.9380388860590756,
+      "split": "test",
+      "subset": "eng"
+    },
+    {
+      "name": "Scoring",
+      "start": 1.9382032877765596,
+      "end": 1.9717790340073407,
+      "split": "test",
+      "subset": "eng"
+    },
+    {
+      "name": "Encoding",
+      "start": 1.9793194150552154,
+      "end": 2.6428709528408945,
+      "split": "test",
+      "subset": "eng"
+    },
+    {
+      "name": "Scoring",
+      "start": 2.643044474069029,
+      "end": 2.673218735959381,
+      "split": "test",
+      "subset": "eng"
+    },
+    {
+      "name": "Encoding",
+      "start": 2.6806685249321163,
+      "end": 3.434453437104821,
+      "split": "test",
+      "subset": "eng"
+    },
+    {
+      "name": "Scoring",
+      "start": 3.4346348149701953,
+      "end": 3.461744060739875,
+      "split": "test",
+      "subset": "eng"
+    },
+    {
+      "name": "Encoding",
+      "start": 3.469323626719415,
+      "end": 4.275088851805776,
+      "split": "test",
+      "subset": "eng"
+    },
+    {
+      "name": "Scoring",
+      "start": 4.2752761649899185,
+      "end": 4.308961977716535,
+      "split": "test",
+      "subset": "eng"
+    }
+  ]
 }

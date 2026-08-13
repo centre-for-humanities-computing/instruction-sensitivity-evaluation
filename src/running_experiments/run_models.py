@@ -10,7 +10,7 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-cache_path = Path("cache_data_customassignment") / "mteb_cache"
+cache_path = Path("cache_data") / "mteb_cache"
 cache = mteb.ResultCache(cache_path=cache_path)
 
 

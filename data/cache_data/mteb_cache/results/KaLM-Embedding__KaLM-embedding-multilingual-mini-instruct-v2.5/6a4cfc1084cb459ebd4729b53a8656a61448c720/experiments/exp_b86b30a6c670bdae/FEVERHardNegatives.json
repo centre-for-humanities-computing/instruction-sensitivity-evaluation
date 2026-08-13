@@ -1,7 +1,7 @@
 {
   "dataset_revision": "080c9ed6267b65029207906e815d44a9240bafca",
   "task_name": "FEVERHardNegatives",
-  "mteb_version": "2.12.16",
+  "mteb_version": "2.18.0",
   "scores": {
     "test": [
       {
@@ -40,7 +40,7 @@
         "mrr_at_10": 0.838448,
         "mrr_at_20": 0.838826,
         "mrr_at_100": 0.83885,
-        "mrr_at_1000": 0.838856,
+        "mrr_at_1000": 0.838855,
         "nauc_ndcg_at_1_max": 0.018151,
         "nauc_ndcg_at_1_std": -0.441112,
         "nauc_ndcg_at_1_diff1": 0.683109,
@@ -56,12 +56,12 @@
         "nauc_ndcg_at_20_max": 0.056189,
         "nauc_ndcg_at_20_std": -0.354495,
         "nauc_ndcg_at_20_diff1": 0.58713,
-        "nauc_ndcg_at_100_max": 0.050779,
-        "nauc_ndcg_at_100_std": -0.360574,
-        "nauc_ndcg_at_100_diff1": 0.590293,
-        "nauc_ndcg_at_1000_max": 0.048712,
-        "nauc_ndcg_at_1000_std": -0.363037,
-        "nauc_ndcg_at_1000_diff1": 0.59467,
+        "nauc_ndcg_at_100_max": 0.050787,
+        "nauc_ndcg_at_100_std": -0.360563,
+        "nauc_ndcg_at_100_diff1": 0.590295,
+        "nauc_ndcg_at_1000_max": 0.048721,
+        "nauc_ndcg_at_1000_std": -0.363026,
+        "nauc_ndcg_at_1000_diff1": 0.594671,
         "nauc_map_at_1_max": 0.039378,
         "nauc_map_at_1_std": -0.371691,
         "nauc_map_at_1_diff1": 0.622678,
@@ -77,11 +77,11 @@
         "nauc_map_at_20_max": 0.055249,
         "nauc_map_at_20_std": -0.356286,
         "nauc_map_at_20_diff1": 0.586921,
-        "nauc_map_at_100_max": 0.054438,
-        "nauc_map_at_100_std": -0.357753,
-        "nauc_map_at_100_diff1": 0.587806,
-        "nauc_map_at_1000_max": 0.054467,
-        "nauc_map_at_1000_std": -0.357683,
+        "nauc_map_at_100_max": 0.054441,
+        "nauc_map_at_100_std": -0.357749,
+        "nauc_map_at_100_diff1": 0.587807,
+        "nauc_map_at_1000_max": 0.05447,
+        "nauc_map_at_1000_std": -0.357679,
         "nauc_map_at_1000_diff1": 0.588026,
         "nauc_recall_at_1_max": 0.039378,
         "nauc_recall_at_1_std": -0.371691,
@@ -140,12 +140,12 @@
         "nauc_mrr_at_20_max": 0.021437,
         "nauc_mrr_at_20_std": -0.460453,
         "nauc_mrr_at_20_diff1": 0.656765,
-        "nauc_mrr_at_100_max": 0.021273,
-        "nauc_mrr_at_100_std": -0.460624,
-        "nauc_mrr_at_100_diff1": 0.656707,
-        "nauc_mrr_at_1000_max": 0.02126,
-        "nauc_mrr_at_1000_std": -0.460634,
-        "nauc_mrr_at_1000_diff1": 0.656753,
+        "nauc_mrr_at_100_max": 0.021277,
+        "nauc_mrr_at_100_std": -0.460619,
+        "nauc_mrr_at_100_diff1": 0.656709,
+        "nauc_mrr_at_1000_max": 0.021264,
+        "nauc_mrr_at_1000_std": -0.46063,
+        "nauc_mrr_at_1000_diff1": 0.656754,
         "hit_rate_at_1": 0.736,
         "hit_rate_at_3": 0.933,
         "hit_rate_at_5": 0.971,
@@ -157,11 +157,42 @@
         "hf_subset": "default",
         "languages": [
           "eng-Latn"
-        ]
+        ],
+        "mteb_version": "2.18.0"
       }
     ]
   },
-  "evaluation_time": 1667.972047328949,
+  "evaluation_time": 3029.6984733399004,
   "kg_co2_emissions": null,
-  "date": 1777867981.664871
+  "date": 1785877040.842814,
+  "evaluation_phases": [
+    {
+      "name": "Data loading",
+      "start": 1.6176141798496246e-05,
+      "end": 3.9706874918192625,
+      "split": "",
+      "subset": ""
+    },
+    {
+      "name": "Dataset transform",
+      "start": 3.9706976041197777,
+      "end": 3.9706987240351737,
+      "split": "",
+      "subset": ""
+    },
+    {
+      "name": "Encoding queries and documents",
+      "start": 3.9841680517420173,
+      "end": 3029.091731152963,
+      "split": "test",
+      "subset": "default"
+    },
+    {
+      "name": "Scoring",
+      "start": 3029.091971362941,
+      "end": 3029.6703304038383,
+      "split": "test",
+      "subset": "default"
+    }
+  ]
 }

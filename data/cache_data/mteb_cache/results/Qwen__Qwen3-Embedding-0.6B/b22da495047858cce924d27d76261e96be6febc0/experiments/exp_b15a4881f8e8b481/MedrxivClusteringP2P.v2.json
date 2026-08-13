@@ -1,0 +1,82 @@
+{
+  "dataset_revision": "e7a26af6f3ae46b30dde8737f02c07b1505bcc73",
+  "task_name": "MedrxivClusteringP2P.v2",
+  "mteb_version": "2.18.0",
+  "scores": {
+    "test": [
+      {
+        "v_measures": {
+          "Level 0": [
+            0.379172,
+            0.372738,
+            0.35586,
+            0.380739,
+            0.377554,
+            0.376448,
+            0.392164,
+            0.383848,
+            0.363619,
+            0.382823
+          ]
+        },
+        "v_measure": 0.376496,
+        "v_measure_std": 0.009857,
+        "ami_scores": {
+          "Level 0": [
+            0.364655,
+            0.358584,
+            0.341332,
+            0.366112,
+            0.363048,
+            0.362253,
+            0.378336,
+            0.369922,
+            0.34898,
+            0.369068
+          ]
+        },
+        "ami": 0.362229,
+        "ami_std": 0.010063,
+        "main_score": 0.376496,
+        "hf_subset": "default",
+        "languages": [
+          "eng-Latn"
+        ],
+        "mteb_version": "2.18.0"
+      }
+    ]
+  },
+  "evaluation_time": 13.3051128720399,
+  "kg_co2_emissions": null,
+  "date": 1784880188.610726,
+  "evaluation_phases": [
+    {
+      "name": "Data loading",
+      "start": 3.110698889940977e-05,
+      "end": 1.1488064500736073,
+      "split": "",
+      "subset": ""
+    },
+    {
+      "name": "Dataset transform",
+      "start": 1.148821022012271,
+      "end": 1.3128196219913661,
+      "split": "",
+      "subset": ""
+    },
+    {
+      "name": "Encoding",
+      "start": 1.3158352100290358,
+      "end": 8.339015113073401,
+      "split": "test",
+      "subset": "default"
+    },
+    {
+      "name": "Scoring",
+      "start": 8.354769277037121,
+      "end": 13.296210183994845,
+      "split": "test",
+      "subset": "default"
+    }
+  ]
+}

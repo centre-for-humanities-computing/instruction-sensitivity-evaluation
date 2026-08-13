@@ -21,11 +21,10 @@ prompt-hacking/
 │   │   ├── generate_prompts.py  # Main script: generates 15 prompts per task using vLLM
 │   │   └── prompt_template.py   # Prompt templates & validation for structured output
 │   ├── running_experiments/     # MTEB evaluation runners
-│   │   ├── run_models.py        # Multi-GPU experiment runner with prompt injection
-│   │   └── run_models_single_gpu.py  # Single-GPU variant
+│   │   ├── run_models.py        # Running one model single-thread
+│   │   └── run_models_prallel.py  # Running one model in parallel
 ├── data/
 │   ├── prompts/                 # Generated prompts (JSON)
-│   │   └── openai-gpt-oss-120b-gen-prompts.json
 │   └── cache_data/mteb_cache/   # Cached MTEB evaluation results
 │       └── results/             # Per-model result directories
 ├── pyproject.toml               # Project metadata & dependencies

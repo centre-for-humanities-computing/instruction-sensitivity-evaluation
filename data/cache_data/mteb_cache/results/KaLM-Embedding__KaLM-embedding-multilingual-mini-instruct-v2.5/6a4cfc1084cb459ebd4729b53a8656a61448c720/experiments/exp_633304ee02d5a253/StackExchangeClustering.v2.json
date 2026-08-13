@@ -1,35 +1,82 @@
 {
   "dataset_revision": "6cbc1f7b2bc0622f2e39d2c77fa502909748c259",
   "task_name": "StackExchangeClustering.v2",
-  "mteb_version": "2.12.16",
+  "mteb_version": "2.18.0",
   "scores": {
     "test": [
       {
         "v_measures": {
           "Level 0": [
-            0.630229,
+            0.630405,
             0.64036,
-            0.626142,
-            0.637403,
-            0.637575,
-            0.63554,
-            0.655817,
+            0.62602,
+            0.639159,
+            0.635938,
+            0.631967,
+            0.65709,
             0.644016,
-            0.632592,
-            0.626615
+            0.645691,
+            0.62667
           ]
         },
-        "v_measure": 0.636629,
-        "v_measure_std": 0.008408,
-        "main_score": 0.636629,
+        "v_measure": 0.637732,
+        "v_measure_std": 0.009144,
+        "ami_scores": {
+          "Level 0": [
+            0.597052,
+            0.607182,
+            0.592286,
+            0.605297,
+            0.603726,
+            0.597468,
+            0.62466,
+            0.612027,
+            0.613061,
+            0.593536
+          ]
+        },
+        "ami": 0.60463,
+        "ami_std": 0.009586,
+        "main_score": 0.637732,
         "hf_subset": "default",
         "languages": [
           "eng-Latn"
-        ]
+        ],
+        "mteb_version": "2.18.0"
       }
     ]
   },
-  "evaluation_time": 6.704541444778442,
+  "evaluation_time": 19.736490772571415,
   "kg_co2_emissions": null,
-  "date": 1777877721.040939
+  "date": 1786054626.882181,
+  "evaluation_phases": [
+    {
+      "name": "Data loading",
+      "start": 2.4783890694379807e-05,
+      "end": 1.3599921851418912,
+      "split": "",
+      "subset": ""
+    },
+    {
+      "name": "Dataset transform",
+      "start": 1.3599978811107576,
+      "end": 8.903150463011116,
+      "split": "",
+      "subset": ""
+    },
+    {
+      "name": "Encoding",
+      "start": 8.90448370622471,
+      "end": 16.50792065402493,
+      "split": "test",
+      "subset": "default"
+    },
+    {
+      "name": "Scoring",
+      "start": 16.53110687620938,
+      "end": 19.733213866129518,
+      "split": "test",
+      "subset": "default"
+    }
+  ]
 }

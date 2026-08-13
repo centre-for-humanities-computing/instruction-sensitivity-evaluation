@@ -1,7 +1,7 @@
 {
   "dataset_revision": "080c9ed6267b65029207906e815d44a9240bafca",
   "task_name": "FEVERHardNegatives",
-  "mteb_version": "2.12.16",
+  "mteb_version": "2.18.0",
   "scores": {
     "test": [
       {
@@ -56,12 +56,12 @@
         "nauc_ndcg_at_20_max": 0.090427,
         "nauc_ndcg_at_20_std": -0.279968,
         "nauc_ndcg_at_20_diff1": 0.591589,
-        "nauc_ndcg_at_100_max": 0.087492,
-        "nauc_ndcg_at_100_std": -0.28494,
-        "nauc_ndcg_at_100_diff1": 0.596125,
-        "nauc_ndcg_at_1000_max": 0.085503,
-        "nauc_ndcg_at_1000_std": -0.286649,
-        "nauc_ndcg_at_1000_diff1": 0.600274,
+        "nauc_ndcg_at_100_max": 0.087491,
+        "nauc_ndcg_at_100_std": -0.284938,
+        "nauc_ndcg_at_100_diff1": 0.596124,
+        "nauc_ndcg_at_1000_max": 0.085501,
+        "nauc_ndcg_at_1000_std": -0.286648,
+        "nauc_ndcg_at_1000_diff1": 0.600272,
         "nauc_map_at_1_max": 0.077567,
         "nauc_map_at_1_std": -0.308183,
         "nauc_map_at_1_diff1": 0.625008,
@@ -77,11 +77,11 @@
         "nauc_map_at_20_max": 0.087886,
         "nauc_map_at_20_std": -0.283301,
         "nauc_map_at_20_diff1": 0.592842,
-        "nauc_map_at_100_max": 0.087448,
-        "nauc_map_at_100_std": -0.284591,
-        "nauc_map_at_100_diff1": 0.593772,
+        "nauc_map_at_100_max": 0.087447,
+        "nauc_map_at_100_std": -0.284589,
+        "nauc_map_at_100_diff1": 0.593771,
         "nauc_map_at_1000_max": 0.08737,
-        "nauc_map_at_1000_std": -0.284573,
+        "nauc_map_at_1000_std": -0.284572,
         "nauc_map_at_1000_diff1": 0.59398,
         "nauc_recall_at_1_max": 0.077567,
         "nauc_recall_at_1_std": -0.308183,
@@ -157,11 +157,42 @@
         "hf_subset": "default",
         "languages": [
           "eng-Latn"
-        ]
+        ],
+        "mteb_version": "2.18.0"
       }
     ]
   },
-  "evaluation_time": 1668.6337976455688,
+  "evaluation_time": 3030.0812444998883,
   "kg_co2_emissions": null,
-  "date": 1777781906.735493
+  "date": 1785849727.260057,
+  "evaluation_phases": [
+    {
+      "name": "Data loading",
+      "start": 1.483224332332611e-05,
+      "end": 3.964341013226658,
+      "split": "",
+      "subset": ""
+    },
+    {
+      "name": "Dataset transform",
+      "start": 3.9643519250676036,
+      "end": 3.964352885261178,
+      "split": "",
+      "subset": ""
+    },
+    {
+      "name": "Encoding queries and documents",
+      "start": 3.9779536961577833,
+      "end": 3029.4193445243873,
+      "split": "test",
+      "subset": "default"
+    },
+    {
+      "name": "Scoring",
+      "start": 3029.419601518195,
+      "end": 3030.0490386742167,
+      "split": "test",
+      "subset": "default"
+    }
+  ]
 }

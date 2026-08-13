@@ -1,7 +1,7 @@
 {
   "dataset_revision": "e7a26af6f3ae46b30dde8737f02c07b1505bcc73",
   "task_name": "MedrxivClusteringP2P.v2",
-  "mteb_version": "2.12.16",
+  "mteb_version": "2.18.0",
   "scores": {
     "test": [
       {
@@ -11,25 +11,72 @@
             0.457647,
             0.458188,
             0.454405,
-            0.460189,
+            0.46017,
             0.457084,
             0.448586,
             0.445389,
-            0.454288,
+            0.454719,
             0.4546
           ]
         },
-        "v_measure": 0.45454,
-        "v_measure_std": 0.004253,
-        "main_score": 0.45454,
+        "v_measure": 0.454581,
+        "v_measure_std": 0.00425,
+        "ami_scores": {
+          "Level 0": [
+            0.442204,
+            0.444976,
+            0.445296,
+            0.441444,
+            0.447353,
+            0.444547,
+            0.435652,
+            0.432489,
+            0.441993,
+            0.441749
+          ]
+        },
+        "ami": 0.44177,
+        "ami_std": 0.004307,
+        "main_score": 0.454581,
         "hf_subset": "default",
         "languages": [
           "eng-Latn"
-        ]
+        ],
+        "mteb_version": "2.18.0"
       }
     ]
   },
-  "evaluation_time": 38.58016562461853,
+  "evaluation_time": 67.74084600713104,
   "kg_co2_emissions": null,
-  "date": 1777876868.206197
+  "date": 1786048871.995568,
+  "evaluation_phases": [
+    {
+      "name": "Data loading",
+      "start": 3.0223745852708817e-05,
+      "end": 2.5323767201043665,
+      "split": "",
+      "subset": ""
+    },
+    {
+      "name": "Dataset transform",
+      "start": 2.5323830088600516,
+      "end": 2.799403673969209,
+      "split": "",
+      "subset": ""
+    },
+    {
+      "name": "Encoding",
+      "start": 2.802247216925025,
+      "end": 65.69068960892037,
+      "split": "test",
+      "subset": "default"
+    },
+    {
+      "name": "Scoring",
+      "start": 65.70714801410213,
+      "end": 67.7375623807311,
+      "split": "test",
+      "subset": "default"
+    }
+  ]
 }

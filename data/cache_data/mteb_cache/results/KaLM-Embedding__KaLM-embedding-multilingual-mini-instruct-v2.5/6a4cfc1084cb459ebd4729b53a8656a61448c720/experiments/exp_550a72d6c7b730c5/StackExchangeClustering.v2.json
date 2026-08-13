@@ -1,7 +1,7 @@
 {
   "dataset_revision": "6cbc1f7b2bc0622f2e39d2c77fa502909748c259",
   "task_name": "StackExchangeClustering.v2",
-  "mteb_version": "2.12.16",
+  "mteb_version": "2.18.0",
   "scores": {
     "test": [
       {
@@ -9,27 +9,74 @@
           "Level 0": [
             0.764881,
             0.762544,
-            0.766119,
+            0.765378,
             0.757919,
             0.761026,
             0.774338,
-            0.758336,
+            0.768851,
             0.760103,
             0.761043,
             0.759079
           ]
         },
-        "v_measure": 0.762539,
-        "v_measure_std": 0.004679,
-        "main_score": 0.762539,
+        "v_measure": 0.763516,
+        "v_measure_std": 0.004763,
+        "ami_scores": {
+          "Level 0": [
+            0.739973,
+            0.737384,
+            0.741025,
+            0.732409,
+            0.736848,
+            0.750636,
+            0.744708,
+            0.735467,
+            0.736104,
+            0.733719
+          ]
+        },
+        "ami": 0.738827,
+        "ami_std": 0.005217,
+        "main_score": 0.763516,
         "hf_subset": "default",
         "languages": [
           "eng-Latn"
-        ]
+        ],
+        "mteb_version": "2.18.0"
       }
     ]
   },
-  "evaluation_time": 6.775666952133179,
+  "evaluation_time": 19.739519013091922,
   "kg_co2_emissions": null,
-  "date": 1777877673.168592
+  "date": 1786054823.627826,
+  "evaluation_phases": [
+    {
+      "name": "Data loading",
+      "start": 2.537621185183525e-05,
+      "end": 1.2971223322674632,
+      "split": "",
+      "subset": ""
+    },
+    {
+      "name": "Dataset transform",
+      "start": 1.2971316599287093,
+      "end": 8.621270522009581,
+      "split": "",
+      "subset": ""
+    },
+    {
+      "name": "Encoding",
+      "start": 8.62262707715854,
+      "end": 16.573891708161682,
+      "split": "test",
+      "subset": "default"
+    },
+    {
+      "name": "Scoring",
+      "start": 16.596796405036002,
+      "end": 19.736223930027336,
+      "split": "test",
+      "subset": "default"
+    }
+  ]
 }
